@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directorio profesional de marcas y proyectos del sector acuático y de fibra de vidrio en Bolivia.">
+    <meta name="keywords" content="balnearios, fibra de vidrio, proyectos acuáticos, marcas, empresas, Bolivia">
+    <meta property="og:title" content="BALNEARIOS ACUATICOS BO - Directorio de Marcas">
+    <meta property="og:description" content="Una vitrina clara y profesional para revisar empresas, comparar especialidades y evaluar proyectos.">
+    <title>BALNEARIOS ACUATICOS BO - Directorio de Marcas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="home-page">
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span class="logo-icon"></span>
+                    <span class="logo-text">BALNEARIOS ACUATICOS BO</span>
+                </div>
+
+                <nav class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active" data-en="Home" data-es="Inicio">Inicio</a>
+                    <a href="html/proyectos.html" class="nav-link" data-en="Projects" data-es="Proyectos">Proyectos</a>
+                    <a href="html/por-que-visitar.html" class="nav-link" data-en="Why Choose Us" data-es="Por qué elegirnos">Por qué elegirnos</a>
+                    <a href="html/contacto.html" class="nav-link" data-en="Contact" data-es="Contacto">Contacto</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <div class="language-selector language-selector-simple" id="languageSelector" aria-label="Selector de idioma">
+                        <button class="lang-option active" type="button" data-lang="es" data-label="Español">ES</button>
+                        <button class="lang-option" type="button" data-lang="en" data-label="English">EN</button>
+                    </div>
+                    <button class="btn-book-nav" data-nav-target="html/proyectos.html" data-en="View Portfolio" data-es="Ver portafolio">Ver portafolio</button>
+                    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero hostinger-home-hero" id="home">
+        <div class="container">
+            <div class="hero-search-bar-wrap">
+                <div class="search-container hero-search hero-search-main">
+                    <div class="search-wrapper">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Escribe la marca o empresa que buscas..." data-en-placeholder="Search by brand or company..." data-es-placeholder="Escribe la marca o empresa que buscas...">
+                        <button class="search-btn" id="searchBtn">Buscar</button>
+                    </div>
+                    <div class="search-suggestions" id="searchSuggestions"></div>
+                </div>
+                <div class="hero-search-side-note">
+                    <strong data-en="Quick filter" data-es="Filtro rápido">Filtro rápido</strong>
+                    <span data-en="Start from the featured brands and narrow the search in seconds." data-es="Comienza por las marcas destacadas y reduce la búsqueda en segundos.">Comienza por las marcas destacadas y reduce la búsqueda en segundos.</span>
+                </div>
+            </div>
+
+            <div class="hero-stage">
+                <div class="hero-stage-image" aria-hidden="true">
+                    <img src="img/fondo2.png" alt="" class="hero-stage-photo">
+                </div>
+                <div class="hero-stage-overlay"></div>
+                <div class="hero-stage-content">
+                    <h1 class="hero-title" data-en="Leading brands for aquatic projects and fiberglass solutions" data-es="Marcas líderes para proyectos acuáticos y soluciones en fibra de vidrio">
+                        Marcas líderes para proyectos acuáticos y soluciones en fibra de vidrio
+                    </h1>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="exploreBtn" data-en="Explore Featured Brands" data-es="Explorar marcas destacadas">Explorar marcas destacadas</button>
+                        <a href="html/proyectos.html" class="btn btn-secondary hero-secondary-btn" data-en="View Full Portfolio" data-es="Ver portafolio completo">Ver portafolio completo</a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="hero-metric">
+                            <span class="hero-metric-value">5</span>
+                            <span class="hero-metric-label" data-en="Featured brands" data-es="Marcas destacadas">Marcas destacadas</span>
+                        </div>
+                        <div class="hero-metric">
+                            <span class="hero-metric-value">30+</span>
+                            <span class="hero-metric-label" data-en="Years of experience" data-es="Años de experiencia">Años de experiencia</span>
+                        </div>
+                        <div class="hero-metric">
+                            <span class="hero-metric-value">40+</span>
+                            <span class="hero-metric-label" data-en="Countries served" data-es="Países atendidos">Países atendidos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-brands-preview-section" id="brandPreview">
+        <div class="container">
+            <div class="featured-brands-title">
+                <h3 data-en="Featured Brands" data-es="Marcas destacadas">Marcas destacadas</h3>
+                <p class="featured-brands-subtitle" data-en="Review a curated selection of companies with technical profiles, product focus and visual references before entering the full portfolio." data-es="Revise una selección curada de empresas con perfil técnico, enfoque de productos y referencias visuales antes de ingresar al portafolio completo.">
+                    Revise una selección curada de empresas con perfil técnico, enfoque de productos y referencias visuales antes de ingresar al portafolio completo.
+                </p>
+            </div>
+            <div class="featured-brands-preview-grid" id="featuredBrandsPreview"></div>
+            <div class="preview-cta-wrapper">
+                <a href="html/proyectos.html" class="btn btn-primary btn-large" data-en="Open Full Portfolio" data-es="Abrir portafolio completo">Abrir portafolio completo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-transition-section">
+        <div class="container">
+            <div class="home-transition-card">
+                <p class="section-kicker" data-en="Next step" data-es="Siguiente paso">Siguiente paso</p>
+                <h2 class="section-title" data-en="The complete detail lives in the Projects section" data-es="El detalle completo está en la sección Proyectos">El detalle completo está en la sección Proyectos</h2>
+                <p class="section-subtitle" data-en="The homepage offers a quick executive overview. For technical depth, product comparison and full visual review, continue to the complete projects section." data-es="La página de inicio ofrece una vista ejecutiva y rápida. Para profundizar en aspectos técnicos, comparar productos y revisar todo el material visual, continúe a la sección completa de proyectos.">
+                    La página de inicio ofrece una vista ejecutiva y rápida. Para profundizar en aspectos técnicos, comparar productos y revisar todo el material visual, continúe a la sección completa de proyectos.
+                </p>
+                <a href="html/proyectos.html" class="btn btn-primary btn-large" data-en="Go to Projects" data-es="Ir a Proyectos">Ir a Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Visual Gallery" data-es="Galería visual">Galería visual</h2>
+                <p class="section-subtitle" data-en="A visual reference bank to understand the aesthetic language, applications and scale of each company." data-es="Un banco visual de referencia para comprender el lenguaje estético, las aplicaciones y la escala de cada empresa.">
+                    Un banco visual de referencia para comprender el lenguaje estético, las aplicaciones y la escala de cada empresa.
+                </p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="What this experience improves" data-es="Lo que mejora esta experiencia">Lo que mejora esta experiencia</h2>
+                <p class="section-subtitle" data-en="These points summarize the practical value of a clearer and better organized presentation." data-es="Estos puntos resumen el valor práctico de una presentación más clara y mejor organizada.">
+                    Estos puntos resumen el valor práctico de una presentación más clara y mejor organizada.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">01</div>
+                    <p data-en="The visual order improves first impressions and communicates professionalism from the first interaction." data-es="El orden visual mejora la primera impresión y comunica profesionalismo desde el primer contacto.">
+                        El orden visual mejora la primera impresión y comunica profesionalismo desde el primer contacto.
+                    </p>
+                    <p class="testimonial-author" data-en="Professional presentation" data-es="Presentación profesional">Presentación profesional</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">02</div>
+                    <p data-en="Each company gains context, making its offer easier to understand and compare." data-es="Cada empresa gana contexto, lo que facilita entender su propuesta y compararla con mayor criterio.">
+                        Cada empresa gana contexto, lo que facilita entender su propuesta y compararla con mayor criterio.
+                    </p>
+                    <p class="testimonial-author" data-en="Better comparison" data-es="Mejor comparación">Mejor comparación</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">03</div>
+                    <p data-en="A stronger hierarchy guides the user naturally from discovery to decision and contact." data-es="Una jerarquía más sólida conduce al usuario con naturalidad desde el descubrimiento hasta la decisión y el contacto.">
+                        Una jerarquía más sólida conduce al usuario con naturalidad desde el descubrimiento hasta la decisión y el contacto.
+                    </p>
+                    <p class="testimonial-author" data-en="More intuitive navigation" data-es="Navegación más intuitiva">Navegación más intuitiva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to review the full portfolio?" data-es="¿Listo para revisar el portafolio completo?">¿Listo para revisar el portafolio completo?</h2>
+                <p data-en="Continue to the projects section to evaluate each brand in more detail and move toward contact with better information." data-es="Continúe a la sección de proyectos para evaluar cada marca con mayor detalle y avanzar al contacto con mejor información.">
+                    Continúe a la sección de proyectos para evaluar cada marca con mayor detalle y avanzar al contacto con mejor información.
+                </p>
+                <button class="btn btn-large" id="ctaBookBtn" data-nav-target="html/proyectos.html" data-en="Go To Projects" data-es="Ir a Proyectos">Ir a Proyectos</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4 class="footer-title" data-en="About This Directory" data-es="Sobre este directorio">Sobre este directorio</h4>
+                    <p data-en="A curated digital directory focused on presenting aquatic and fiberglass brands with greater clarity, order and credibility." data-es="Un directorio digital curado para presentar marcas del sector acuático y de fibra de vidrio con mayor claridad, orden y credibilidad.">
+                        Un directorio digital curado para presentar marcas del sector acuático y de fibra de vidrio con mayor claridad, orden y credibilidad.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title" data-en="Quick Links" data-es="Enlaces rápidos">Enlaces rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="html/proyectos.html">Proyectos</a></li>
+                        <li><a href="#features">Ventajas</a></li>
+                        <li><a href="html/por-que-visitar.html">Por qué elegirnos</a></li>
+                        <li><a href="html/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title" data-en="Contact" data-es="Contacto">Contacto</h4>
+                    <p>info@balneariosacuaticosbo.com</p>
+                    <p>+591 700 00000</p>
+                    <p>www.balneariosacuaticosbo.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title" data-en="Follow Us" data-es="Síguenos">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-en="© 2026 BALNEARIOS ACUATICOS BO. All rights reserved." data-es="© 2026 BALNEARIOS ACUATICOS BO. Todos los derechos reservados.">© 2026 BALNEARIOS ACUATICOS BO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="parkModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="bookingModal">
+        <div class="modal-content modal-booking">
+            <button class="modal-close" id="bookingClose">&times;</button>
+            <div class="booking-form-wrapper">
+                <h2 data-en="Book Your Adventure" data-es="Reserva Tu Visita">Reserva Tu Visita</h2>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label data-en="Full Name" data-es="Nombre Completo">Nombre Completo</label>
+                        <input type="text" id="guestName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Email" data-es="Correo Electrónico">Correo Electrónico</label>
+                        <input type="email" id="guestEmail" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-en="Date" data-es="Fecha">Fecha</label>
+                            <input type="date" id="visitDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Park" data-es="Proyectos">Proyectos</label>
+                            <select id="parkSelect" required>
+                                <option value="">Selecciona un proyecto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-en="Adults" data-es="Adultos">Adultos</label>
+                            <input type="number" id="adultsCount" value="1" min="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Children" data-es="Niños">Niños</label>
+                            <input type="number" id="childrenCount" value="0" min="0" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label data-en="Package" data-es="Paquete">Paquete</label>
+                        <select id="packageSelect" required>
+                            <option value="standard">Estándar - $29.99</option>
+                            <option value="premium">Premium - $49.99</option>
+                            <option value="vip">VIP - $79.99</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-summary">
+                        <p data-en="Estimated Total:" data-es="Total Estimado:">Total Estimado:</p>
+                        <p class="total-price" id="totalPrice">$0.00</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" data-en="Confirm Booking" data-es="Confirmar Reserva">
+                        Confirmar Reserva
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="imageModal">
+        <div class="modal-image-content">
+            <button class="modal-close" id="imageClose">&times;</button>
+            <img id="modalImage" src="" alt="">
+            <div class="image-nav">
+                <button class="image-prev" id="imagePrev">&lt;</button>
+                <button class="image-next" id="imageNext">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content modal-success">
+            <div class="success-icon">OK</div>
+            <h2 data-en="Booking Confirmed!" data-es="¡Reserva Confirmada!">¡Reserva Confirmada!</h2>
+            <p data-en="Check your email for confirmation details. Your adventure awaits!" data-es="Verifica tu correo para los detalles. Tu aventura te espera.">
+                Verifica tu correo para los detalles. Tu aventura te espera.
+            </p>
+            <button class="btn btn-primary" id="successClose" data-en="Close" data-es="Cerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

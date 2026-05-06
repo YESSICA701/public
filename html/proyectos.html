@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestras marcas y empresas destacadas con una presentacion mas clara, visual y profesional.">
+    <meta name="keywords" content="parques, empresas, marcas, balnearios, parques acuaticos, Bolivia">
+    <meta property="og:title" content="BALNEARIOS ACUATICOS BO - Nuestras Empresas">
+    <meta property="og:description" content="Explora nuestras empresas, filtra por perfil y encuentra la mejor opcion para tu proyecto.">
+    <title>BALNEARIOS ACUATICOS BO - Nuestras Empresas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="site-subpage">
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <span class="logo-icon"></span>
+                    <span class="logo-text">BALNEARIOS ACUATICOS BO</span>
+                </div>
+
+                <nav class="nav-menu" id="navMenu">
+                    <a href="../index.html" class="nav-link" data-en="Home" data-es="Inicio">Inicio</a>
+                    <div class="nav-projects-dropdown" id="navProjectsDropdown">
+                        <button class="nav-link nav-projects-toggle active" id="navProjectsToggle" type="button" aria-expanded="false" aria-controls="projectsMegaPanel" data-en="Projects" data-es="Proyectos">Proyectos</button>
+                        <div class="nav-projects-menu" id="navProjectsMenu">
+                            <div class="projects-mega-shell projects-mega-shell-nav">
+                                <div class="projects-mega-topbar">
+                                    <div class="projects-mega-brand">BALNEARIOS ACUATICOS BO</div>
+                                    <div class="projects-mega-tabs" role="tablist" aria-label="Navegacion de proyectos">
+                                        <button class="projects-mega-tab" type="button" data-project-tab="productos" data-en="Products" data-es="Productos">Productos</button>
+                                        <button class="projects-mega-tab active" type="button" data-project-tab="proyectos" data-en="Projects" data-es="Proyectos">Proyectos</button>
+                                        <button class="projects-mega-tab" type="button" data-project-tab="marcas" data-en="Brands" data-es="Marcas">Marcas</button>
+                                        <button class="projects-mega-tab" type="button" data-project-tab="soluciones" data-en="Solutions" data-es="Soluciones">Soluciones</button>
+                                    </div>
+                                </div>
+                                <div class="projects-mega-panel" id="projectsMegaPanel"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="por-que-visitar.html" class="nav-link" data-en="Why Visit" data-es="Por Que Elegirnos">Por Que Elegirnos</a>
+                    <a href="contacto.html" class="nav-link" data-en="Contact" data-es="Contacto">Contacto</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <div class="language-selector language-selector-simple" id="languageSelector" aria-label="Selector de idioma">
+                        <button class="lang-option active" type="button" data-lang="es" data-label="Espanol">ES</button>
+                        <button class="lang-option" type="button" data-lang="en" data-label="English">EN</button>
+                    </div>
+                    <button class="btn-book-nav" data-nav-target="contacto.html" data-en="Contact" data-es="Contacto">Contacto</button>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero projects-hero" id="home">
+        <div class="container">
+            <div class="projects-hero-search-wrap">
+                <div class="search-container hero-search hero-search-main projects-hero-search">
+                    <div class="search-wrapper">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Escribe la marca o empresa que buscas..." data-en-placeholder="Search by brand or company..." data-es-placeholder="Escribe la marca o empresa que buscas...">
+                        <button class="search-btn" id="searchBtn" data-en="Search" data-es="Buscar">Buscar</button>
+                    </div>
+                    <div class="search-suggestions" id="searchSuggestions"></div>
+                </div>
+                <div class="projects-hero-search-note">
+                    <strong data-en="Quick access" data-es="Acceso rapido">Acceso rapido</strong>
+                    <span data-en="Find a brand, open its detail card and continue browsing the full portfolio." data-es="Encuentra una marca, abre su ficha y sigue revisando todo el portafolio.">Encuentra una marca, abre su ficha y sigue revisando todo el portafolio.</span>
+                </div>
+            </div>
+
+            <div class="projects-hero-stage">
+                <div class="projects-hero-copy">
+                    <p class="hero-subtitle" data-en="Premium Company Directory" data-es="Directorio Premium de Empresas">Directorio Premium de Empresas</p>
+                    <h1 class="hero-title" data-en="Projects presented with more clarity" data-es="Proyectos presentados con mas claridad">Proyectos presentados con mas claridad</h1>
+                    <p class="hero-description" data-en="A visual showcase of brands, solutions and completed work." data-es="Una presentacion visual de marcas, soluciones y proyectos realizados.">
+                        Una presentacion visual de marcas, soluciones y proyectos realizados.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="exploreBtn" data-en="See Featured Brands" data-es="Ver Destacadas">Ver Destacadas</button>
+                        <a href="#parksSection" class="btn btn-secondary hero-secondary-btn" data-en="See All Companies" data-es="Ver Todas">Ver Todas</a>
+                    </div>
+                </div>
+
+                <aside class="projects-hero-visual" aria-label="Presentacion visual destacada">
+                    <div class="projects-hero-frame">
+                        <img src="../img/aquapark/aquapark15.png" alt="Proyecto acuatico destacado" class="projects-hero-image">
+                        <div class="projects-hero-overlay"></div>
+                        <div class="projects-hero-badge-wrap">
+                            <span class="hero-media-chip" data-en="Featured selection" data-es="Seleccion destacada">Seleccion destacada</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="companies-trust-strip">
+        <div class="container">
+            <div class="trust-strip-card">
+                <span>Elegidas por calidad</span>
+                <span>Comparacion mas rapida</span>
+                <span>Presencia internacional</span>
+                <span>Experiencia comprobada</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="parks-section companies-page-section" id="parks">
+        <div class="container">
+            <section class="parks-container">
+                <div class="container">
+                    <div class="parks-section" id="parksSection">
+                        <div class="parks-title">
+                            <h3 data-en="All Companies" data-es="Todas las Empresas">Todas las Empresas</h3>
+                            <p class="parks-subtitle" data-en="Explore our complete portfolio of composite materials manufacturers" data-es="Explora nuestro portafolio completo de empresas y marcas disponibles.">
+                                Explora nuestro portafolio completo de empresas y marcas disponibles.
+                            </p>
+                        </div>
+                        <div class="parks-grid" id="parksGrid"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">BALNEARIOS ACUATICOS BO</span>
+                    </div>
+                    <p data-en="Featured parks and brands with a clearer and more professional presentation." data-es="Marcas y empresas destacadas con una presentacion mas clara y profesional.">
+                        Marcas y empresas destacadas con una presentacion mas clara y profesional.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-en="Quick Links" data-es="Enlaces Rapidos">Enlaces Rapidos</h3>
+                    <ul>
+                        <li><a href="../index.html" data-en="Home" data-es="Inicio">Inicio</a></li>
+                        <li><a href="parques.html" data-en="Projects" data-es="Proyectos">Proyectos</a></li>
+                        <li><a href="por-que-visitar.html" data-en="Why Choose Us" data-es="Por Que Elegirnos">Por Que Elegirnos</a></li>
+                        <li><a href="contacto.html" data-en="Contact" data-es="Contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-en="Contact Info" data-es="Informacion de Contacto">Informacion de Contacto</h3>
+                    <ul>
+                        <li>info@balneariosacuaticosbo.com</li>
+                        <li>+591 700 00000</li>
+                        <li>Santa Cruz, Bolivia</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-en="Follow Us" data-es="Siguenos">Siguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-en="© 2026 BALNEARIOS ACUATICOS BO. All rights reserved." data-es="© 2026 BALNEARIOS ACUATICOS BO. Todos los derechos reservados.">
+                    © 2026 BALNEARIOS ACUATICOS BO. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle" data-en="Company Details" data-es="Detalles de la Empresa">Detalles de la Empresa</h3>
+                <button class="modal-close" id="modalClose">x</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="bookingOverlay">
+        <div class="modal booking-modal" id="bookingModal">
+            <div class="modal-header">
+                <h3 class="modal-title" data-en="Book Your Consultation" data-es="Reserva Tu Consulta">Reserva Tu Consulta</h3>
+                <button class="modal-close" id="bookingClose">x</button>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="fullName" data-en="Full Name" data-es="Nombre Completo">Nombre Completo</label>
+                        <input type="text" id="fullName" required data-en-placeholder="Enter your full name" data-es-placeholder="Ingresa tu nombre completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-en="Email" data-es="Correo Electronico">Correo Electronico</label>
+                        <input type="email" id="email" required data-en-placeholder="Enter your email" data-es-placeholder="Ingresa tu correo electronico">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company" data-en="Company" data-es="Empresa">Empresa</label>
+                        <select id="company" required>
+                            <option value="" data-en="Select a company" data-es="Selecciona una empresa">Selecciona una empresa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType" data-en="Service Type" data-es="Tipo de Servicio">Tipo de Servicio</label>
+                        <select id="serviceType" required>
+                            <option value="" data-en="Select service type" data-es="Selecciona tipo de servicio">Selecciona tipo de servicio</option>
+                            <option value="consultation" data-en="Technical Consultation" data-es="Consulta Tecnica">Consulta Tecnica</option>
+                            <option value="quote" data-en="Request Quote" data-es="Solicitar Cotizacion">Solicitar Cotizacion</option>
+                            <option value="partnership" data-en="Partnership Inquiry" data-es="Consulta de Asociacion">Consulta de Asociacion</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-es="Mensaje">Mensaje</label>
+                        <textarea id="message" rows="4" data-en-placeholder="Tell us about your project..." data-es-placeholder="Cuentanos sobre tu proyecto..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <div class="price-display">
+                            <span data-en="Estimated Cost:" data-es="Costo Estimado:">Costo Estimado:</span>
+                            <span id="estimatedCost">$0.00</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-en="Send Request" data-es="Enviar Solicitud">Enviar Solicitud</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="successOverlay">
+        <div class="modal success-modal" id="successModal">
+            <div class="modal-body success-body">
+                <div class="success-icon">OK</div>
+                <h3 data-en="Request Sent Successfully!" data-es="Solicitud Enviada Exitosamente!">Solicitud Enviada Exitosamente!</h3>
+                <p data-en="Thank you for your interest. Our team will contact you within 24 hours." data-es="Gracias por tu interes. Nuestro equipo te contactara dentro de 24 horas.">
+                    Gracias por tu interes. Nuestro equipo te contactara dentro de 24 horas.
+                </p>
+                <button class="btn btn-primary" id="successClose" data-en="Close" data-es="Cerrar">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
