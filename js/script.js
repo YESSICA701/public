@@ -541,6 +541,14 @@ const COMPLETE_GALLERIES = {
     ],
 };
 
+const GALLERY_FEATURED_SELECTIONS = {
+    1: [2, 4, 7, 1],
+    2: [4, 6, 2, 8],
+    3: [4, 6, 8, 2],
+    4: [3, 5, 7, 1],
+    5: [5, 6, 8, 2]
+};
+
 const ASSET_PREFIX = window.location.pathname.includes('/html/') ? '../' : '';
 
 const TRANSLATIONS = {
@@ -1038,7 +1046,9 @@ const state = {
     selectedPark: null,
     bookingData: {},
     currentGalleryIndex: 0,
-    currentHomeVideoIndex: 0
+    currentHomeVideoIndex: 0,
+    galleryInitialized: false,
+    homeVideoRailInitialized: false
 };
 
 // ============ LANGUAGE SYSTEM ============
@@ -1147,7 +1157,7 @@ function setLanguage(lang) {
         renderFeaturedBrandsPreview(PARKS_DATA);
     }
 
-    if (document.body.classList.contains('home-page')) {
+    if (document.body.classList.contains('home-page') && state.homeVideoRailInitialized) {
         initHomeVideoRail();
     }
 
@@ -1161,7 +1171,11 @@ function setLanguage(lang) {
         renderProjectsMegaMenu(activeTab);
     }
 
-    if (document.getElementById('galleryGrid')) {
+    if (document.getElementById('contactBrandsGrid') || document.getElementById('company')) {
+        initContactPageDirectory();
+    }
+
+    if (document.getElementById('galleryGrid') && state.galleryInitialized) {
         initGallery();
     }
 
@@ -1196,13 +1210,54 @@ function initParksGrid() {
         renderFeaturedBrands(PARKS_DATA);
     }
 
-    if (document.body.classList.contains('home-page')) {
-        initHomeVideoRail();
-    }
 }
 
 function getHomeVideoShowcaseItems() {
     return HOME_VIDEO_SHOWCASE.filter(item => item.video);
+}
+
+function observeOnceWhenVisible(element, callback, options = {}) {
+    if (!element || typeof callback !== 'function') {
+        return;
+    }
+
+    const { rootMargin = '200px 0px' } = options;
+
+    if (typeof IntersectionObserver !== 'function') {
+        callback();
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        if (!entries.some(entry => entry.isIntersecting)) {
+            return;
+        }
+
+        observer.disconnect();
+        callback();
+    }, { rootMargin });
+
+    observer.observe(element);
+}
+
+function scheduleDeferredHomeSections() {
+    const galleryGrid = document.getElementById('galleryGrid');
+    if (galleryGrid && !state.galleryInitialized) {
+        observeOnceWhenVisible(galleryGrid, () => {
+            state.galleryInitialized = true;
+            initGallery();
+        });
+    }
+
+    if (!document.body.classList.contains('home-page') || state.homeVideoRailInitialized) {
+        return;
+    }
+
+    const videoSectionTrigger = document.querySelector('.home-transition-section');
+    observeOnceWhenVisible(videoSectionTrigger, () => {
+        state.homeVideoRailInitialized = true;
+        initHomeVideoRail();
+    });
 }
 
 function mountHomeVideoRailSection() {
@@ -1225,25 +1280,7 @@ function mountHomeVideoRailSection() {
 
     container.innerHTML = `
         <div class="home-video-stage">
-            <div class="home-video-copy">
-                <p class="section-kicker" data-en="Visual campaign" data-es="Campana visual">Campana visual</p>
-                <h2 class="section-title" data-en="Space designed so that you can be inspired" data-es="Espacio pensado para que que usted se puede inspirar">Demos cortos con una presentacion mas publicitaria</h2>
-                <p class="section-subtitle" data-en="Instead of oversized brand videos, the homepage now highlights short visual demos that quickly communicate atmosphere, movement, and commercial appeal." data-es="Demostracion visual de trabajos hechos y realizados por las marcas .">
-                    En lugar de videos enormes por marca, el inicio ahora destaca demos visuales cortos que comunican rapido ambiente, movimiento y atractivo comercial.
-                </p>
-                <div class="home-video-copy-points">
-                    <span data-en="Compact format" data-es="Formato compacto">Formato compacto</span>
-                    <span data-en="More visual impact" data-es="Mayor impacto visual">Mayor impacto visual</span>
-                    <span data-en="Marketing style" data-es="Estilo publicitario">Estilo publicitario</span>
-                </div>
-                <a href="html/proyectos.html" class="home-video-section-link" data-en="Open full portfolio" data-es="Abrir portafolio completo">Abrir portafolio completo</a>
-            </div>
-
             <div class="home-video-showcase">
-                <div class="home-video-section-header">
-                    <p class="home-video-mini-label" data-en="Demo reel" data-es="Demo reel">Demo reel</p>
-                </div>
-
                 <div class="home-video-rail-shell">
                     <button class="home-video-nav home-video-nav-prev" id="homeVideoPrev" type="button" aria-label="Video anterior">
                         <span aria-hidden="true">&lt;</span>
@@ -1269,23 +1306,13 @@ function mountHomeVideoRailSection() {
 function createHomeVideoRailCardMarkup(item, currentLanguage) {
     const isSpanish = currentLanguage === 'es';
     const title = isSpanish && item.title ? item.title : item.titleEn || item.title;
-    const eyebrow = isSpanish && item.eyebrow ? item.eyebrow : item.eyebrowEn || item.eyebrow;
-    const description = isSpanish && item.description ? item.description : item.descriptionEn || item.description;
-    const ctaLabel = isSpanish && item.ctaLabel ? item.ctaLabel : item.ctaLabelEn || item.ctaLabel;
 
     return `
         <article class="home-video-card" data-video-id="${item.id}">
             <div class="home-video-frame">
-                <video class="home-video-media" muted playsinline preload="metadata" loop>
+                <video class="home-video-media" muted playsinline preload="metadata" loop aria-label="${title}">
                     <source src="${resolveAssetPath(item.video)}" type="video/mp4">
                 </video>
-                <div class="home-video-overlay"></div>
-                <div class="home-video-content">
-                    <span class="home-video-brand">${eyebrow}</span>
-                    <h3 class="home-video-title">${title}</h3>
-                    <p class="home-video-description">${description}</p>
-                    <a href="${item.href}" class="home-video-link">${ctaLabel}</a>
-                </div>
             </div>
         </article>
     `;
@@ -1477,6 +1504,7 @@ function scrollHomeVideoRailTo(index) {
 }
 
 function initHomeVideoRail() {
+    state.homeVideoRailInitialized = true;
     renderHomeVideoRail();
 
     const section = document.getElementById('homeVideoRail');
@@ -1968,7 +1996,7 @@ function renderProjectsMegaMenu(activeTab = 'proyectos') {
                     ${config.leftItems.map((item, index) => `
                         <a class="projects-mega-entry projects-mega-link ${index === 0 ? 'is-active' : ''}" href="${item.href}">
                             <span class="projects-mega-entry-label">${isEs ? item.labelEs : item.labelEn}</span>
-                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 96)}</span>
+                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 58)}</span>
                         </a>
                     `).join('')}
                 </div>
@@ -1980,7 +2008,7 @@ function renderProjectsMegaMenu(activeTab = 'proyectos') {
                     ${config.centerItems.map(item => `
                         <a class="projects-mega-entry projects-mega-feature-item" href="${item.href}">
                             <span class="projects-mega-entry-label">${isEs ? item.labelEs : item.labelEn}</span>
-                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 92)}</span>
+                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 54)}</span>
                         </a>
                     `).join('')}
                 </div>
@@ -1992,7 +2020,7 @@ function renderProjectsMegaMenu(activeTab = 'proyectos') {
                     ${config.materialItems.map(item => `
                         <a class="projects-mega-entry projects-mega-feature-item" href="${item.href}">
                             <span class="projects-mega-entry-label">${isEs ? item.labelEs : item.labelEn}</span>
-                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 92)}</span>
+                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 54)}</span>
                         </a>
                     `).join('')}
                 </div>
@@ -2004,7 +2032,7 @@ function renderProjectsMegaMenu(activeTab = 'proyectos') {
                     ${sortedBrands.map(park => `
                         <a class="projects-mega-brand-item" href="${buildBrandDetailsUrl(park.id)}">
                             <span>${park.name}</span>
-                            <span>${getCompactMegaCopy(getMegaBrandMeta(park, currentLanguage), 82)}</span>
+                            <span>${getCompactMegaCopy(getMegaBrandMeta(park, currentLanguage), 46)}</span>
                         </a>
                     `).join('')}
                 </div>
@@ -2161,7 +2189,7 @@ function createBrandCardMarkup(park, index, currentLanguage, options = {}) {
             <article class="featured-brand-card-preview" id="park-card-${park.id}" data-park-id="${park.id}" style="--brand-primary: ${brandColor.primary}; --brand-secondary: ${brandColor.secondary}; --brand-accent: ${brandColor.accent}; --brand-bg: ${brandColor.bg}; --brand-soft: ${brandColor.soft}; --brand-border: ${brandColor.border}; --brand-shadow: ${brandColor.shadow};">
                 <div class="preview-card-grid">
                     <div class="preview-image-panel">
-                        ${renderBrandMedia(park, 'featured-brand-image-preview')}
+                        ${renderBrandMedia(park, 'featured-brand-image-preview', { preferImage: true })}
                         <div class="preview-badge" style="background: linear-gradient(135deg, ${brandColor.primary}, ${brandColor.secondary});">
                             <span>${typeLabel}</span>
                         </div>
@@ -2347,25 +2375,27 @@ function createBrandCardMarkup(park, index, currentLanguage, options = {}) {
     `;
 }
 
-function renderBrandMedia(park, className) {
-    if (park.video) {
+function renderBrandMedia(park, className, options = {}) {
+    const { preferImage = false, videoPreload = 'metadata' } = options;
+
+    if (park.video && !preferImage) {
         return `
-            <video class="${className}" autoplay muted loop playsinline preload="metadata">
+            <video class="${className}" autoplay muted loop playsinline preload="${videoPreload}">
                 <source src="${resolveAssetPath(park.video)}" type="video/mp4">
             </video>
         `;
     }
 
-    return `<img src="${resolveAssetPath(park.image)}" alt="${park.name}" class="${className}">`;
+    return `<img src="${resolveAssetPath(park.image)}" alt="${park.name}" class="${className}" loading="lazy" decoding="async">`;
 }
 
 function createBrandGalleryMarkup(park, variant = 'full') {
-    const galleryImages = getUniqueGalleryImages(park);
+    const galleryImages = getPreferredGalleryImages(park);
     if (galleryImages.length === 0) {
         return '';
     }
 
-    const visibleImages = galleryImages.slice(0, 3);
+    const visibleImages = galleryImages.slice(0, 4);
     const extraImages = Math.max(galleryImages.length - visibleImages.length, 0);
     const title = variant === 'full' ? 'Más fotos de la marca' : 'Galería';
 
@@ -2399,6 +2429,22 @@ function getUniqueGalleryImages(park) {
     });
 
     return uniqueImages;
+}
+
+function getPreferredGalleryImages(park) {
+    const galleryImages = getUniqueGalleryImages(park);
+    const featuredIndexes = GALLERY_FEATURED_SELECTIONS[park.id] || [];
+    const curatedImages = featuredIndexes
+        .map(index => galleryImages[index])
+        .filter(Boolean);
+
+    galleryImages.forEach((image) => {
+        if (!curatedImages.includes(image)) {
+            curatedImages.push(image);
+        }
+    });
+
+    return curatedImages;
 }
 
 function getLocalizedParkContent(park, currentLanguage) {
@@ -2464,14 +2510,14 @@ function createBrandExternalLinksMarkup(park, extraClass = '') {
             <div class="brand-external-links-list">
                 ${links.map(link => `
                     ${link.available ? `
-                        <a class="brand-external-link" href="${link.href}" target="_blank" rel="noopener noreferrer">
+                        <a class="brand-external-link brand-external-link--${link.key}" href="${link.href}" target="_blank" rel="noopener noreferrer" aria-label="${link.label}" title="${link.label}">
                             <span class="brand-external-link-icon" aria-hidden="true">${link.icon}</span>
-                            <span>${link.label}</span>
+                            <span class="brand-external-link-label">${link.label}</span>
                         </a>
                     ` : `
-                        <span class="brand-external-link is-disabled" aria-disabled="true" title="${translateText('Not Available')}">
+                        <span class="brand-external-link brand-external-link--${link.key} is-disabled" aria-disabled="true" title="${link.label} - ${translateText('Not Available')}">
                             <span class="brand-external-link-icon" aria-hidden="true">${link.icon}</span>
-                            <span>${link.label}</span>
+                            <span class="brand-external-link-label">${link.label}</span>
                             <span class="brand-external-link-status">${translateText('Not Available')}</span>
                         </span>
                     `}
@@ -2569,6 +2615,90 @@ function getBrandColorForPark(park) {
     return getBrandColor(Math.max(parkIndex, 0));
 }
 
+function formatWhatsappDisplay(whatsappUrl) {
+    if (typeof whatsappUrl !== 'string' || !whatsappUrl) {
+        return '';
+    }
+
+    const digits = whatsappUrl.replace('https://wa.me/', '');
+    return digits ? `+${digits}` : '';
+}
+
+function buildProductWhatsAppHref(park, product, currentLanguage) {
+    const whatsappBase = park?.contactLinks?.whatsapp;
+    if (typeof whatsappBase !== 'string' || !whatsappBase) {
+        return '';
+    }
+
+    const isEs = currentLanguage === 'es';
+    const message = isEs
+        ? `Hola, me interesa ${product} de ${park.name}. ¿Podrían darme más información, por favor?`
+        : `Hello, I'm interested in ${product} from ${park.name}. Could you share more information, please?`;
+
+    const separator = whatsappBase.includes('?') ? '&' : '?';
+    return `${whatsappBase}${separator}text=${encodeURIComponent(message)}`;
+}
+
+function createContactBrandCardMarkup(park, currentLanguage) {
+    const isEs = currentLanguage === 'es';
+    const brandColor = getBrandColorForPark(park);
+    const links = park.contactLinks || {};
+    const profile = BRAND_DETAIL_CONTENT[park.id] || {};
+    const emailValue = typeof links.email === 'string' ? links.email.replace(/^mailto:/i, '') : (isEs ? 'No disponible' : 'Not available');
+    const whatsappValue = formatWhatsappDisplay(links.whatsapp) || (isEs ? 'No disponible' : 'Not available');
+    const websiteValue = links.website ? links.website.replace(/^https?:\/\//i, '') : (isEs ? 'No disponible' : 'Not available');
+    const locationValue = currentLanguage === 'es' && park.locationEs ? park.locationEs : park.location;
+
+    return `
+        <article class="contact-brand-card" style="--contact-brand-primary: ${brandColor.primary}; --contact-brand-secondary: ${brandColor.secondary}; --contact-brand-accent: ${brandColor.accent}; --contact-brand-soft: ${brandColor.soft}; --contact-brand-border: ${brandColor.border}; --contact-brand-shadow: ${brandColor.shadow};">
+            <div class="contact-brand-card-top">
+                <h3>${park.name}</h3>
+                <span class="contact-brand-line"></span>
+            </div>
+            <div class="contact-brand-card-body">
+                <div class="contact-brand-detail">
+                    <span class="contact-brand-detail-label">${isEs ? 'Email' : 'Email'}</span>
+                    ${links.email ? `<a href="${links.email}">${emailValue}</a>` : `<span>${emailValue}</span>`}
+                </div>
+                <div class="contact-brand-detail">
+                    <span class="contact-brand-detail-label">${isEs ? 'WhatsApp' : 'WhatsApp'}</span>
+                    ${links.whatsapp ? `<a href="${links.whatsapp}" target="_blank" rel="noopener noreferrer">${whatsappValue}</a>` : `<span>${whatsappValue}</span>`}
+                </div>
+                <div class="contact-brand-detail">
+                    <span class="contact-brand-detail-label">${isEs ? 'Dirección' : 'Location'}</span>
+                    ${profile.mapUrl ? `<a href="${profile.mapUrl}" target="_blank" rel="noopener noreferrer">${locationValue || (isEs ? 'No disponible' : 'Not available')}</a>` : `<span>${locationValue || (isEs ? 'No disponible' : 'Not available')}</span>`}
+                </div>
+                <div class="contact-brand-detail">
+                    <span class="contact-brand-detail-label">${isEs ? 'Sitio web' : 'Website'}</span>
+                    ${links.website ? `<a href="${links.website}" target="_blank" rel="noopener noreferrer">${websiteValue}</a>` : `<span>${websiteValue}</span>`}
+                </div>
+            </div>
+            <div class="contact-brand-card-actions">
+                ${links.whatsapp ? `<a class="contact-brand-action" href="${links.whatsapp}" target="_blank" rel="noopener noreferrer">${isEs ? 'Abrir WhatsApp' : 'Open WhatsApp'}</a>` : ''}
+                ${links.website ? `<a class="contact-brand-action contact-brand-action-soft" href="${links.website}" target="_blank" rel="noopener noreferrer">${isEs ? 'Ver sitio' : 'Visit site'}</a>` : ''}
+            </div>
+        </article>
+    `;
+}
+
+function initContactPageDirectory() {
+    const currentLanguage = state.currentLanguage || 'es';
+    const brandsGrid = document.getElementById('contactBrandsGrid');
+    const companySelect = document.getElementById('company');
+
+    if (brandsGrid) {
+        brandsGrid.innerHTML = PARKS_DATA.map(park => createContactBrandCardMarkup(park, currentLanguage)).join('');
+    }
+
+    if (companySelect) {
+        const placeholder = currentLanguage === 'es' ? 'Selecciona una marca' : 'Select a brand';
+        companySelect.innerHTML = `
+            <option value="">${placeholder}</option>
+            ${PARKS_DATA.map(park => `<option value="${park.id}">${park.name}</option>`).join('')}
+        `;
+    }
+}
+
 function getTypeConfig(type) {
     return TYPE_CONFIG[type] || TYPE_CONFIG.family;
 }
@@ -2604,6 +2734,40 @@ function setParkModalVisibility(isActive) {
     if (parkOverlay) {
         parkOverlay.classList.toggle('active', isActive);
     }
+}
+
+function createParkProductGalleryMarkup(park, products, currentLanguage) {
+    const visualPool = getUniqueGalleryImages(park).filter(image => image && image !== park.image);
+    const fallbackImage = visualPool[0] || park.image;
+
+    return `
+        <div class="park-detail-products-grid">
+            ${products.slice(0, 6).map((product, index) => {
+                const productImage = visualPool[index % Math.max(visualPool.length, 1)] || fallbackImage;
+                const imageIndex = productImage ? Math.max(getUniqueGalleryImages(park).indexOf(productImage), 0) : 0;
+                const productCaption = getGalleryImageDescription(park, index, currentLanguage);
+                const whatsappHref = buildProductWhatsAppHref(park, product, currentLanguage);
+                const viewLabel = currentLanguage === 'es' ? 'Ver galeria' : 'View gallery';
+                const interestLabel = currentLanguage === 'es' ? 'Me interesa' : 'I am interested';
+
+                return `
+                    <article class="park-detail-product-card">
+                        <button class="park-detail-product-media" type="button" onclick="openParkGallery(${park.id}, ${imageIndex})" aria-label="${currentLanguage === 'es' ? 'Ver imagen de' : 'View image for'} ${product}">
+                            <img src="${resolveAssetPath(productImage)}" alt="${product}" class="park-detail-product-image" loading="lazy">
+                        </button>
+                        <span class="park-detail-product-copy">
+                            <span class="park-detail-product-name">${product}</span>
+                            <span class="park-detail-product-caption">${productCaption}</span>
+                        </span>
+                        <span class="park-detail-product-actions">
+                            <button class="park-detail-product-gallery-btn" type="button" onclick="openParkGallery(${park.id}, ${imageIndex})">${viewLabel}</button>
+                            ${whatsappHref ? `<a class="park-detail-product-whatsapp-btn" href="${whatsappHref}" target="_blank" rel="noopener noreferrer">${interestLabel}</a>` : ''}
+                        </span>
+                    </article>
+                `;
+            }).join('')}
+        </div>
+    `;
 }
 
 function showParkDetails(parkId) {
@@ -2661,7 +2825,10 @@ function showParkDetails(parkId) {
                         </div>
                         <h2 class="park-detail-title">${park.name}</h2>
                         <p class="park-brand-tagline">${profile.tagline}</p>
-                        <p class="park-detail-location">📍 ${location}</p>
+                        ${profile.mapUrl
+                            ? `<a class="park-detail-location park-detail-location-link" href="${profile.mapUrl}" target="_blank" rel="noopener noreferrer">📍 ${location}</a>`
+                            : `<p class="park-detail-location">📍 ${location}</p>`
+                        }
                     </div>
                     <div class="park-brand-hero-action">
                         ${primaryCtaHref ? `
@@ -2681,7 +2848,10 @@ function showParkDetails(parkId) {
                     </div>
                     <div class="park-brand-meta-card">
                         <span class="park-brand-meta-label">${isEs ? 'Ubicacion' : 'Location'}</span>
-                        <strong>${location}</strong>
+                        ${profile.mapUrl
+                            ? `<strong><a class="park-brand-meta-link" href="${profile.mapUrl}" target="_blank" rel="noopener noreferrer">${location}</a></strong>`
+                            : `<strong>${location}</strong>`
+                        }
                     </div>
                     <div class="park-brand-meta-card">
                         <span class="park-brand-meta-label">${isEs ? 'Ano de fundacion' : 'Founded'}</span>
@@ -2710,14 +2880,7 @@ function showParkDetails(parkId) {
 
                 <div class="park-detail-section">
                     <h3 class="park-detail-section-title">${isEs ? 'Productos o servicios destacados' : 'Featured products or services'}</h3>
-                    <ul class="park-detail-features-list">
-                    ${products.slice(0, 6).map(h => `
-                        <li class="park-detail-feature-item">
-                            <span class="park-detail-feature-check">✓</span>
-                            <span>${h}</span>
-                        </li>
-                    `).join('')}
-                    </ul>
+                    ${createParkProductGalleryMarkup(park, products, currentLanguage)}
                 </div>
 
                 <div class="park-detail-section">
@@ -2847,6 +3010,8 @@ function initGallery() {
         return;
     }
 
+    state.galleryInitialized = true;
+
     const currentLanguage = state.currentLanguage || 'es';
     const sortedParks = [...PARKS_DATA].sort((a, b) => a.name.localeCompare(b.name));
     const allImages = [];
@@ -2945,7 +3110,7 @@ function openParkGallery(parkId, imageIndex = 0) {
         return;
     }
 
-    const galleryImages = getUniqueGalleryImages(park);
+    const galleryImages = getPreferredGalleryImages(park);
     if (galleryImages.length === 0) {
         return;
     }
@@ -2975,8 +3140,41 @@ function updateImageModal() {
     if (!img) {
         return;
     }
-    document.getElementById('modalImage').src = img.src;
-    document.getElementById('modalImage').alt = img.alt || 'Imagen de galería';
+
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('imageModalTitle');
+    const modalDescription = document.getElementById('imageModalDescription');
+    const modalCount = document.getElementById('imageModalCount');
+    const modalThumbs = document.getElementById('imageModalThumbs');
+
+    modalImage.src = img.src;
+    modalImage.alt = img.alt || 'Imagen de galería';
+
+    if (modalTitle) {
+        modalTitle.textContent = img.title || '';
+    }
+
+    if (modalDescription) {
+        modalDescription.textContent = img.description || '';
+    }
+
+    if (modalCount) {
+        const total = window.allGalleryImages?.length || 0;
+        modalCount.textContent = `${state.currentGalleryIndex + 1} / ${total}`;
+    }
+
+    if (modalThumbs) {
+        modalThumbs.innerHTML = (window.allGalleryImages || []).map((galleryImage, index) => `
+            <button
+                class="image-modal-thumb ${index === state.currentGalleryIndex ? 'active' : ''}"
+                type="button"
+                data-gallery-index="${index}"
+                aria-label="${galleryImage.alt || `Imagen ${index + 1}`}"
+            >
+                <img src="${galleryImage.src}" alt="${galleryImage.alt || `Imagen ${index + 1}`}" loading="lazy" decoding="async">
+            </button>
+        `).join('');
+    }
 }
 
 function getGalleryImageDescription(park, imageIndex, language = 'es') {
@@ -3013,6 +3211,7 @@ function initModals() {
     const imageClose = document.getElementById('imageClose');
     const imagePrev = document.getElementById('imagePrev');
     const imageNext = document.getElementById('imageNext');
+    const imageThumbs = document.getElementById('imageModalThumbs');
     const parkOverlay = getParkModalOverlay();
 
     if (modalClose) {
@@ -3067,6 +3266,18 @@ function initModals() {
         imageNext.addEventListener('click', () => {
             if (!window.allGalleryImages || window.allGalleryImages.length === 0) return;
             state.currentGalleryIndex = (state.currentGalleryIndex + 1) % window.allGalleryImages.length;
+            updateImageModal();
+        });
+    }
+
+    if (imageThumbs) {
+        imageThumbs.addEventListener('click', (event) => {
+            const thumb = event.target.closest('[data-gallery-index]');
+            if (!thumb) {
+                return;
+            }
+
+            state.currentGalleryIndex = Number(thumb.dataset.galleryIndex || 0);
             updateImageModal();
         });
     }
@@ -3493,12 +3704,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     initLanguageSystem();
     initParksGrid();
-    initGallery();
     initModals();
     initForm();
     initNavigation();
     initSearch();
     initSuccessModal();
+    initContactPageDirectory();
+    scheduleDeferredHomeSections();
     
     // Restore language preference
     const savedLang = localStorage.getItem('preferredLanguage') || 'es';

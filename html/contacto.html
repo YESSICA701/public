@@ -52,16 +52,16 @@
                     <a href="proyectos.html" class="btn btn-secondary" data-en="View Projects" data-es="Ver Proyectos">Ver Proyectos</a>
                 </div>
                 <div class="contact-hero-flags">
-                    <span class="contact-flag-pill flag-red">Respuesta rapida</span>
-                    <span class="contact-flag-pill flag-yellow">Atencion nacional</span>
+                    <span class="contact-flag-pill flag-red">Respuesta rápida</span>
+                    <span class="contact-flag-pill flag-yellow">Atención nacional</span>
                     <span class="contact-flag-pill flag-green">Soluciones a medida</span>
                 </div>
             </div>
             <div class="hero-image contact-hero-panel">
                 <div class="contact-hero-card">
                     <span class="contact-hero-badge">Bolivia</span>
-                    <h2>Un punto de contacto mas fuerte para empresas y clientes</h2>
-                    <p>Conectamos consultas, proyectos y marcas con una experiencia mas clara, cercana y confiable.</p>
+                    <h2>Un punto de contacto más fuerte para empresas y clientes</h2>
+                    <p>Conectamos consultas, proyectos y marcas con una experiencia más clara, cercana y confiable.</p>
                     <div class="contact-hero-stats">
                         <div><strong>5</strong><span>marcas activas</span></div>
                         <div><strong>24h</strong><span>respuesta referencial</span></div>
@@ -72,95 +72,69 @@
         </div>
     </section>
 
-    <section class="contact-section" id="contact">
+    <section class="contact-section contact-section-directory" id="contact">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-info-intro">
-                        <span class="contact-section-chip" data-en="Direct communication" data-es="Comunicacion directa">Comunicacion directa</span>
-                    </div>
-                    <h2 data-en="Get In Touch" data-es="Ponte en Contacto">Ponte en Contacto</h2>
-                    <p data-en="Ready to receive more information? Write to us and we will help you choose the best option." data-es="¿Listo para recibir más información? Escríbenos y te ayudaremos a elegir la mejor opción.">
-                        ¿Listo para recibir más información? Escríbenos y te ayudaremos a elegir la mejor opción.
+            <div class="contact-directory-header">
+                <h2 class="section-title" data-en="Contact Our Brands" data-es="Contáctanos">Contáctanos</h2>
+                <p class="section-subtitle" data-en="Represents our five leading brands. Choose the one that best fits your needs and connect through real contact channels." data-es="Representa nuestras 5 marcas líderes. Elige la que mejor se adapta a tus necesidades y conecta con sus canales reales.">
+                    Representa nuestras 5 marcas líderes. Elige la que mejor se adapta a tus necesidades y conecta con sus canales reales.
+                </p>
+            </div>
+
+            <div class="contact-brand-grid" id="contactBrandsGrid"></div>
+
+            <div class="contact-form contact-form-showcase">
+                <div class="contact-form-banner">
+                    <h3 data-en="Send Us A Message" data-es="Envíanos un mensaje">Envíanos un mensaje</h3>
+                    <p data-en="Complete the form and we will help you connect with the brand that best fits your project." data-es="Completa el formulario y nos pondremos en contacto contigo para llevarte a la marca más adecuada.">
+                        Completa el formulario y nos pondremos en contacto contigo para llevarte a la marca más adecuada.
                     </p>
-
-                    <div class="contact-bolivia-strip"><span></span><span></span><span></span></div>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">01</div>
-                            <div>
-                                <h3 data-en="Email" data-es="Correo Electrónico">Correo Electrónico</h3>
-                                <p>info@balneariosacuaticosbo.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">02</div>
-                            <div>
-                                <h3 data-en="Phone" data-es="Teléfono">Teléfono</h3>
-                                <p>+591 700 00000</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">03</div>
-                            <div>
-                                <h3 data-en="Address" data-es="Dirección">Dirección</h3>
-                                <p>Santa Cruz, Bolivia<br>Avenida Principal 123<br>Zona Empresarial</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">04</div>
-                            <div>
-                                <h3 data-en="Business Hours" data-es="Horario de Atención">Horario de Atención</h3>
-                                <p data-en="Mon-Fri: 8AM-6PM" data-es="Lun-Vie: 8:00 a 18:00">Lun-Vie: 8:00 a 18:00</p>
-                                <p data-en="Sat-Sun: Closed" data-es="Sáb-Dom: Cerrado">Sáb-Dom: Cerrado</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <form id="bookingForm" class="contact-form-shell">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName" data-en="Full Name" data-es="Nombre completo">Nombre completo</label>
+                            <input type="text" id="fullName" required data-en-placeholder="Your name" data-es-placeholder="Tu nombre">
+                        </div>
 
-                <div class="contact-form">
-                    <div class="contact-form-top">
-                        <span class="contact-section-chip chip-soft" data-en="Write to us" data-es="Escribenos">Escribenos</span>
-                        <h3>Cuentanos sobre tu proyecto</h3>
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-es="Correo electrónico">Correo electrónico</label>
+                            <input type="email" id="email" required data-en-placeholder="you@email.com" data-es-placeholder="tu@email.com">
+                        </div>
                     </div>
-                    <form id="contactForm">
+
+                    <div class="form-row">
                         <div class="form-group">
-                            <label for="contactName" data-en="Full Name" data-es="Nombre Completo">Nombre Completo</label>
-                            <input type="text" id="contactName" required data-en-placeholder="Enter your full name" data-es-placeholder="Ingresa tu nombre completo">
+                            <label for="phone" data-en="Phone" data-es="Teléfono">Teléfono</label>
+                            <input type="tel" id="phone" data-en-placeholder="+591 700 00000" data-es-placeholder="+591 700 00000">
                         </div>
 
                         <div class="form-group">
-                            <label for="contactEmail" data-en="Email Address" data-es="Correo Electrónico">Correo Electrónico</label>
-                            <input type="email" id="contactEmail" required data-en-placeholder="Enter your email address" data-es-placeholder="Ingresa tu correo electrónico">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contactCompany" data-en="Company" data-es="Empresa">Empresa</label>
-                            <input type="text" id="contactCompany" data-en-placeholder="Your company name" data-es-placeholder="Nombre de tu empresa">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contactSubject" data-en="Subject" data-es="Asunto">Asunto</label>
-                            <select id="contactSubject" required>
-                                <option value="" data-en="Select a subject" data-es="Selecciona un asunto">Selecciona un asunto</option>
-                                <option value="general" data-en="General Inquiry" data-es="Consulta General">Consulta General</option>
-                                <option value="technical" data-en="Technical Support" data-es="Soporte Técnico">Soporte Técnico</option>
-                                <option value="quote" data-en="Request Quote" data-es="Solicitar Información">Solicitar Información</option>
-                                <option value="partnership" data-en="Partnership" data-es="Alianza Comercial">Alianza Comercial</option>
+                            <label for="company" data-en="Brand of interest" data-es="Marca de interés">Marca de interés</label>
+                            <select id="company" required>
+                                <option value="" data-en="Select a brand" data-es="Selecciona una marca">Selecciona una marca</option>
                             </select>
                         </div>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="contactMessage" data-en="Message" data-es="Mensaje">Mensaje</label>
-                            <textarea id="contactMessage" rows="6" required data-en-placeholder="Tell us about your project or inquiry..." data-es-placeholder="Cuéntanos sobre tu consulta..."></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label for="contactSubject" data-en="Subject" data-es="Motivo de contacto">Motivo de contacto</label>
+                        <select id="contactSubject" required>
+                            <option value="" data-en="Select a subject" data-es="Selecciona un motivo">Selecciona un motivo</option>
+                            <option value="quote" data-en="Request Quote" data-es="Solicitar cotización">Solicitar cotización</option>
+                            <option value="technical" data-en="Technical Consultation" data-es="Consulta técnica">Consulta técnica</option>
+                            <option value="commercial" data-en="Commercial Contact" data-es="Contacto comercial">Contacto comercial</option>
+                            <option value="portfolio" data-en="Portfolio Review" data-es="Revisión de portafolio">Revisión de portafolio</option>
+                        </select>
+                    </div>
 
-                        <button type="submit" class="btn btn-primary btn-full" data-en="Send Message" data-es="Enviar Mensaje">Enviar Mensaje</button>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <label for="contactMessage" data-en="Message" data-es="Mensaje">Mensaje</label>
+                        <textarea id="contactMessage" rows="6" required data-en-placeholder="Tell us what type of project, product or brand you want to evaluate..." data-es-placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-submit-btn" data-en="Send Message" data-es="Enviar mensaje">Enviar mensaje</button>
+                </form>
             </div>
         </div>
     </section>
@@ -197,13 +171,24 @@
                         </div>
                         <div class="location-item">
                             <span class="flag">TR</span>
-                            <span data-en="Trinidad" data-es="Tarija">Tarija</span>
+                            <span data-en="Tarija" data-es="Tarija">Tarija</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content modal-success">
+            <div class="success-icon">OK</div>
+            <h2 data-en="Message Sent!" data-es="¡Mensaje Enviado!">¡Mensaje Enviado!</h2>
+            <p data-en="Check your email for follow-up details. Our team will contact you soon." data-es="Revisa tu correo para los detalles. Nuestro equipo te contactará pronto.">
+                Revisa tu correo para los detalles. Nuestro equipo te contactará pronto.
+            </p>
+            <button class="btn btn-primary" id="successClose" data-en="Close" data-es="Cerrar">Cerrar</button>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -221,7 +206,7 @@
                     <h3 data-en="Quick Links" data-es="Enlaces Rápidos">Enlaces Rápidos</h3>
                     <ul>
                         <li><a href="../index.html" data-en="Home" data-es="Inicio">Inicio</a></li>
-                        <li><a href="parques.html" data-en="Parks" data-es="Parques">Parques</a></li>
+                        <li><a href="proyectos.html" data-en="Parks" data-es="Proyectos">Proyectos</a></li>
                         <li><a href="por-que-visitar.html" data-en="Why Choose Us" data-es="Por Qué Elegirnos">Por Qué Elegirnos</a></li>
                         <li><a href="contacto.html" data-en="Contact" data-es="Contacto">Contacto</a></li>
                     </ul>
@@ -239,10 +224,26 @@
                 <div class="footer-section">
                     <h3 data-en="Follow Us" data-es="Síguenos">Síguenos</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">TikTok</a>
-                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link social-link-instagram" aria-label="Instagram" title="Instagram">
+                            <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95Zm8.98 1.35a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.15 5.15 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z"/></svg></span>
+                            <span class="social-link-label">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link social-link-tiktok" aria-label="TikTok" title="TikTok">
+                            <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.5 3c.23 1.9 1.37 3.34 3.27 4.07.71.28 1.46.43 2.23.45v2.82a8.06 8.06 0 0 1-3.68-.89v5.28a6.73 6.73 0 1 1-6.72-6.73c.3 0 .61.02.91.07v2.87a3.91 3.91 0 1 0 2.99 3.79V3h3Z"/></svg></span>
+                            <span class="social-link-label">TikTok</span>
+                        </a>
+                        <a href="#" class="social-link social-link-youtube" aria-label="YouTube" title="YouTube">
+                            <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.58 7.19a2.97 2.97 0 0 0-2.09-2.1C17.62 4.6 12 4.6 12 4.6s-5.62 0-7.49.49a2.97 2.97 0 0 0-2.09 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .42 4.81 2.97 2.97 0 0 0 2.09 2.1c1.87.49 7.49.49 7.49.49s5.62 0 7.49-.49a2.97 2.97 0 0 0 2.09-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.42-4.81ZM9.75 15.1V8.9L15.2 12l-5.45 3.1Z"/></svg></span>
+                            <span class="social-link-label">YouTube</span>
+                        </a>
+                        <a href="#" class="social-link social-link-x" aria-label="X" title="X">
+                            <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-6.77 7.74L23 22h-6.1l-4.78-6.67L6.28 22H3.17l7.24-8.27L1 2h6.25l4.32 6.06L18.9 2Zm-1.07 18h1.69L6.34 3.9H4.52L17.83 20Z"/></svg></span>
+                            <span class="social-link-label">X</span>
+                        </a>
+                        <a href="#" class="social-link social-link-facebook" aria-label="Facebook" title="Facebook">
+                            <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.77l.42-3.2H13.5V8.56c0-.93.27-1.56 1.6-1.56h1.71V4.14c-.3-.04-1.3-.14-2.48-.14-2.46 0-4.14 1.5-4.14 4.25v2.35H7.4v3.2h2.79V22h3.31Z"/></svg></span>
+                            <span class="social-link-label">Facebook</span>
+                        </a>
                     </div>
                 </div>
             </div>
