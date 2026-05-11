@@ -10,7 +10,8 @@
     <title>BALNEARIOS ACUATICOS BO - Directorio de Marcas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="img/fondo3-optimized.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="home-page">
@@ -18,7 +19,6 @@
         <div class="container">
             <div class="navbar-content">
                 <div class="logo">
-                    <span class="logo-icon"></span>
                     <span class="logo-text">BALNEARIOS ACUATICOS BO</span>
                 </div>
 
@@ -34,7 +34,6 @@
                         <button class="lang-option active" type="button" data-lang="es" data-label="Español">ES</button>
                         <button class="lang-option" type="button" data-lang="en" data-label="English">EN</button>
                     </div>
-                    <button class="btn-book-nav" data-nav-target="html/proyectos.html" data-en="View Portfolio" data-es="Ver portafolio">Ver portafolio</button>
                     <button class="hamburger" id="hamburger" aria-label="Abrir menú">
                         <span></span>
                         <span></span>
@@ -55,22 +54,20 @@
                     </div>
                     <div class="search-suggestions" id="searchSuggestions"></div>
                 </div>
-                <div class="hero-search-side-note">
-                    <strong data-en="Quick filter" data-es="Filtro rápido">Filtro rápido</strong>
-                    <span data-en="Start from the featured brands and narrow the search in seconds." data-es="Comienza por las marcas destacadas y reduce la búsqueda en segundos.">Comienza por las marcas destacadas y reduce la búsqueda en segundos.</span>
-                </div>
+               
             </div>
 
             <div class="hero-stage">
                 <div class="hero-stage-image" aria-hidden="true">
-                    <img src="img/fondo2.png" alt="" class="hero-stage-photo">
+                    <img src="img/fondo3-optimized.jpg" alt="" class="hero-stage-photo" width="1672" height="941" decoding="async" fetchpriority="high">
                 </div>
                 <div class="hero-stage-overlay"></div>
                 <div class="hero-stage-content">
-                    <h1 class="hero-title" data-en="Leading brands for aquatic projects and fiberglass solutions" data-es="Marcas líderes para proyectos acuáticos y soluciones en fibra de vidrio">
-                        Marcas líderes para proyectos acuáticos y soluciones en fibra de vidrio
+                    <h1 class="hero-title" data-en="Leading brands for aquatic projects and fiberglass solutions" data-es="EMPRESAS LÍDERES PARA PROYECTOS ACUÁTICOS ">
+                        EMPRESAS LÍDERES PARA PROYECTOS ACUÁTICOS 
                     </h1>
 
+                    
                     <div class="hero-buttons">
                         <button class="btn btn-primary" id="exploreBtn" data-en="Explore Featured Brands" data-es="Explorar marcas destacadas">Explorar marcas destacadas</button>
                         <a href="html/proyectos.html" class="btn btn-secondary hero-secondary-btn" data-en="View Full Portfolio" data-es="Ver portafolio completo">Ver portafolio completo</a>
@@ -98,10 +95,8 @@
     <section class="featured-brands-preview-section" id="brandPreview">
         <div class="container">
             <div class="featured-brands-title">
-                <h3 data-en="Featured Brands" data-es="Marcas destacadas">Marcas destacadas</h3>
-                <p class="featured-brands-subtitle" data-en="Review a curated selection of companies with technical profiles, product focus and visual references before entering the full portfolio." data-es="Revise una selección curada de empresas con perfil técnico, enfoque de productos y referencias visuales antes de ingresar al portafolio completo.">
-                    Revise una selección curada de empresas con perfil técnico, enfoque de productos y referencias visuales antes de ingresar al portafolio completo.
-                </p>
+                <h3 data-en="Featured Brands" data-es="MARCAS DESTACADAS">MARCAS DESTACADAS</h3>
+                
             </div>
             <div class="featured-brands-preview-grid" id="featuredBrandsPreview"></div>
             <div class="preview-cta-wrapper">
@@ -128,9 +123,9 @@
     <section class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-en="Visual Gallery" data-es="Galería visual">Galería visual</h2>
+                <h2 class="section-title" data-en="Visual Gallery" data-es="GALERIA VISUAL">GALERIA VISUAL</h2>
                 <p class="section-subtitle" data-en="A visual reference bank to understand the aesthetic language, applications and scale of each company." data-es="Un banco visual de referencia para comprender el lenguaje estético, las aplicaciones y la escala de cada empresa.">
-                    Un banco visual de referencia para comprender el lenguaje estético, las aplicaciones y la escala de cada empresa.
+                    Un banco visual de referencia para comprender el lenguaje estético, las aplicaciones y la escala de cada marca.
                 </p>
             </div>
 
@@ -141,7 +136,7 @@
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title" data-en="What this experience improves" data-es="Lo que mejora esta experiencia">Lo que mejora esta experiencia</h2>
+                <h2 class="section-title" data-en="What this experience improves" data-es="LO QUE MEJORA ESTA EXPERIENCIA">LO QUE MEJORA ESTA EXPERIENCIA</h2>
                 <p class="section-subtitle" data-en="These points summarize the practical value of a clearer and better organized presentation." data-es="Estos puntos resumen el valor práctico de una presentación más clara y mejor organizada.">
                     Estos puntos resumen el valor práctico de una presentación más clara y mejor organizada.
                 </p>
@@ -175,17 +170,7 @@
         </div>
     </section>
 
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 data-en="Ready to review the full portfolio?" data-es="¿Listo para revisar el portafolio completo?">¿Listo para revisar el portafolio completo?</h2>
-                <p data-en="Continue to the projects section to evaluate each brand in more detail and move toward contact with better information." data-es="Continúe a la sección de proyectos para evaluar cada marca con mayor detalle y avanzar al contacto con mejor información.">
-                    Continúe a la sección de proyectos para evaluar cada marca con mayor detalle y avanzar al contacto con mejor información.
-                </p>
-                <button class="btn btn-large" id="ctaBookBtn" data-nav-target="html/proyectos.html" data-en="Go To Projects" data-es="Ir a Proyectos">Ir a Proyectos</button>
-            </div>
-        </div>
-    </section>
+    
 
     <footer class="footer" id="contact">
         <div class="container">
@@ -201,7 +186,6 @@
                     <h4 class="footer-title" data-en="Quick Links" data-es="Enlaces rápidos">Enlaces rápidos</h4>
                     <ul class="footer-links">
                         <li><a href="html/proyectos.html">Proyectos</a></li>
-                        <li><a href="#features">Ventajas</a></li>
                         <li><a href="html/por-que-visitar.html">Por qué elegirnos</a></li>
                         <li><a href="html/contacto.html">Contacto</a></li>
                     </ul>
@@ -210,13 +194,17 @@
                 <div class="footer-section">
                     <h4 class="footer-title" data-en="Contact" data-es="Contacto">Contacto</h4>
                     <p>info@balneariosacuaticosbo.com</p>
-                    <p>+591 700 00000</p>
+                    <p>+591 72978463</p>
                     <p>www.balneariosacuaticosbo.com</p>
                 </div>
 
                 <div class="footer-section">
                     <h4 class="footer-title" data-en="Follow Us" data-es="Síguenos">Síguenos</h4>
                     <div class="social-links">
+                        <a href="https://wa.me/59172978463" class="social-link social-link-whatsapp" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+                            <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.05 4.94A9.9 9.9 0 0 0 12.02 2C6.53 2 2.05 6.47 2.05 11.98c0 1.76.46 3.48 1.33 5L2 22l5.17-1.35a9.94 9.94 0 0 0 4.84 1.23h.01c5.49 0 9.97-4.47 9.97-9.98a9.9 9.9 0 0 0-2.94-6.96Zm-7.03 15.25h-.01a8.3 8.3 0 0 1-4.22-1.15l-.3-.18-3.07.8.82-2.99-.2-.31a8.27 8.27 0 0 1-1.28-4.39c0-4.58 3.72-8.31 8.3-8.31 2.22 0 4.3.86 5.87 2.43a8.24 8.24 0 0 1 2.43 5.88c0 4.58-3.72 8.31-8.34 8.31Zm4.56-6.22c-.25-.12-1.47-.73-1.7-.81-.23-.09-.4-.12-.57.12-.17.24-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.2-.73-.65-1.22-1.45-1.37-1.69-.14-.24-.02-.37.11-.49.11-.11.25-.29.37-.43.12-.15.17-.24.25-.4.08-.17.04-.31-.02-.43-.06-.12-.57-1.37-.78-1.88-.21-.5-.42-.43-.57-.44h-.48c-.17 0-.43.06-.66.31-.23.24-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.73 2.64 4.19 3.7.59.26 1.05.41 1.41.53.59.19 1.12.16 1.54.1.47-.07 1.47-.6 1.68-1.17.21-.57.21-1.06.15-1.17-.06-.1-.23-.16-.48-.29Z"/></svg></span>
+                            <span class="social-link-label">WhatsApp</span>
+                        </a>
                         <a href="#" class="social-link social-link-instagram" aria-label="Instagram" title="Instagram">
                             <span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95Zm8.98 1.35a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.15 5.15 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z"/></svg></span>
                             <span class="social-link-label">Instagram</span>
@@ -254,90 +242,7 @@
         </div>
     </div>
 
-    <div class="modal" id="bookingModal">
-        <div class="modal-content modal-booking">
-            <button class="modal-close" id="bookingClose">&times;</button>
-            <div class="booking-form-wrapper">
-                <h2 data-en="Book Your Adventure" data-es="Reserva Tu Visita">Reserva Tu Visita</h2>
-                <form id="bookingForm" class="booking-form">
-                    <div class="form-group">
-                        <label data-en="Full Name" data-es="Nombre Completo">Nombre Completo</label>
-                        <input type="text" id="guestName" required>
-                    </div>
 
-                    <div class="form-group">
-                        <label data-en="Email" data-es="Correo Electrónico">Correo Electrónico</label>
-                        <input type="email" id="guestEmail" required>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label data-en="Date" data-es="Fecha">Fecha</label>
-                            <input type="date" id="visitDate" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label data-en="Park" data-es="Proyectos">Proyectos</label>
-                            <select id="parkSelect" required>
-                                <option value="">Selecciona un proyecto</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label data-en="Adults" data-es="Adultos">Adultos</label>
-                            <input type="number" id="adultsCount" value="1" min="1" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label data-en="Children" data-es="Niños">Niños</label>
-                            <input type="number" id="childrenCount" value="0" min="0" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label data-en="Package" data-es="Paquete">Paquete</label>
-                        <select id="packageSelect" required>
-                            <option value="standard">Estándar - $29.99</option>
-                            <option value="premium">Premium - $49.99</option>
-                            <option value="vip">VIP - $79.99</option>
-                        </select>
-                    </div>
-
-                    <div class="booking-summary">
-                        <p data-en="Estimated Total:" data-es="Total Estimado:">Total Estimado:</p>
-                        <p class="total-price" id="totalPrice">$0.00</p>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-full" data-en="Confirm Booking" data-es="Confirmar Reserva">
-                        Confirmar Reserva
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="imageModal">
-        <div class="modal-image-content">
-            <button class="modal-close" id="imageClose">&times;</button>
-            <div class="image-modal-stage">
-                <div class="image-modal-main">
-                    <button class="image-prev" id="imagePrev" type="button" aria-label="Imagen anterior">&lt;</button>
-                    <img id="modalImage" src="" alt="">
-                    <button class="image-next" id="imageNext" type="button" aria-label="Imagen siguiente">&gt;</button>
-                </div>
-                <div class="image-modal-info">
-                    <div class="image-modal-meta">
-                        <span class="image-modal-count" id="imageModalCount"></span>
-                        <h3 class="image-modal-title" id="imageModalTitle"></h3>
-                    </div>
-                    <p class="image-modal-description" id="imageModalDescription"></p>
-                    <div class="image-modal-thumbs" id="imageModalThumbs"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="modal" id="successModal">
         <div class="modal-content modal-success">
@@ -350,6 +255,43 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <div class="modal" id="imageModal">
+        <div class="modal-image-content">
+            <button class="modal-close" id="imageClose">&times;</button>
+            <div class="image-modal-stage">
+                <div class="image-modal-main">
+                    <button class="image-prev" id="imagePrev" type="button" aria-label="Imagen anterior">&lt;</button>
+                    <div class="image-modal-presentation">
+                        <div class="image-modal-backdrop" id="imageModalBackdrop" aria-hidden="true"></div>
+                        <div class="image-modal-scene" id="imageModalScene">
+                            <img id="modalImage" src="" alt="">
+                            <div class="image-modal-scene-overlay" aria-hidden="true"></div>
+                            <div class="image-modal-scene-caption">
+                                <span class="image-modal-scene-label" id="imageModalSceneLabel"></span>
+                                <span class="image-modal-scene-brand" id="imageModalSceneBrand"></span>
+                            </div>
+                            <div class="image-modal-progress" aria-hidden="true">
+                                <span class="image-modal-progress-bar" id="imageModalProgress"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="image-next" id="imageNext" type="button" aria-label="Imagen siguiente">&gt;</button>
+                </div>
+                <div class="image-modal-info">
+                    <div class="image-modal-meta">
+                        <div class="image-modal-meta-copy">
+                            <span class="image-modal-count" id="imageModalCount"></span>
+                            <h3 class="image-modal-title" id="imageModalTitle"></h3>
+                        </div>
+                        <button class="image-modal-toggle" id="imageModalToggle" type="button" aria-pressed="true"></button>
+                    </div>
+                    <p class="image-modal-description" id="imageModalDescription"></p>
+                    <div class="image-modal-thumbs" id="imageModalThumbs"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>

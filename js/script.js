@@ -56,15 +56,14 @@ const PARKS_DATA = [
         image: "img/fiberglass/fiberglass0.png",
         video: "videos/video_fiberglass.mp4",
         gallery: [
-            "img/fiberglass/fiberglass14.jpg",
-            
-            "img/fiberglass/fiberglass13.png",
-            "img/fiberglass/fiberglass14.jpg"
+            "img/fiberglass/fiberglass1.jpeg",
+            "img/fiberglass/fiberglass2.jpeg",
+            "img/fiberglass/fiberglass3.jpeg",
+            "img/fiberglass/fiberglass4.jpeg"
         ],
         contactLinks: {
-            website: "https://www.construex.com.bo/exhibidores/fiberglass",
+            website: "https://fiberglassbolivia.com/",
             facebook: "https://www.facebook.com/profile.php?id=100065452810900",
-            instagram: null,
             whatsapp: "https://wa.me/59171232509",
             email: "mailto:fiberglasbolivia@gmail.com"
         }
@@ -337,8 +336,8 @@ const BRAND_DETAIL_CONTENT = {
         visionEn: 'To become a benchmark brand in versatile, long-lasting fiberglass solutions.',
         differentiatorEs: 'Combina experiencia tecnica, variedad de productos y respuesta directa para proyectos personalizados.',
         differentiatorEn: 'It combines technical experience, product variety, and direct response for custom projects.',
-        primaryCtaEs: 'Explorar marca',
-        primaryCtaEn: 'Explore brand',
+        primaryCtaEs: 'Explorar sitio',
+        primaryCtaEn: 'Explore site',
         primaryCtaType: 'website',
         mapUrl: 'https://maps.google.com/?q=Quillacollo+Cochabamba+Bolivia'
     },
@@ -356,8 +355,8 @@ const BRAND_DETAIL_CONTENT = {
         visionEn: 'To be the preferred brand for recreational and monumental projects that seek differentiation.',
         differentiatorEs: 'Su valor esta en mezclar ejecucion constructiva con identidad visual en cada obra.',
         differentiatorEn: 'Its value lies in blending construction execution with visual identity in every project.',
-        primaryCtaEs: 'Ver proyectos',
-        primaryCtaEn: 'View projects',
+        primaryCtaEs: 'Explorar sitio',
+        primaryCtaEn: 'Explore site',
         primaryCtaType: 'website',
         mapUrl: 'https://maps.google.com/?q=Juan+Pablo+II+Cochabamba+Bolivia'
     },
@@ -375,8 +374,8 @@ const BRAND_DETAIL_CONTENT = {
         visionEn: 'To lead the development of benchmark aquatic spaces in Bolivia and the region.',
         differentiatorEs: 'Aporta una propuesta integral: diseno, construccion y componentes para experiencias acuaticas completas.',
         differentiatorEn: 'It delivers an end-to-end proposal: design, construction, and components for complete aquatic experiences.',
-        primaryCtaEs: 'Explorar',
-        primaryCtaEn: 'Explore',
+        primaryCtaEs: 'Explorar sitio',
+        primaryCtaEn: 'Explore site',
         primaryCtaType: 'website',
         mapUrl: 'https://maps.google.com/?q=Santa+Cruz+Bolivia'
     },
@@ -394,9 +393,9 @@ const BRAND_DETAIL_CONTENT = {
         visionEn: 'To be a national reference for special pieces and durable solutions across sectors.',
         differentiatorEs: 'Se distingue por su flexibilidad para producir desde piezas decorativas hasta soluciones de uso diario.',
         differentiatorEn: 'It stands out for its flexibility, from decorative pieces to everyday-use solutions.',
-        primaryCtaEs: 'Seguir en redes',
-        primaryCtaEn: 'Follow on social media',
-        primaryCtaType: 'instagram',
+        primaryCtaEs: 'Explorar sitio',
+        primaryCtaEn: 'Explore site',
+        primaryCtaType: 'website',
         mapUrl: 'https://maps.google.com/?q=La+Paz+Bolivia'
     },
     5: {
@@ -413,8 +412,8 @@ const BRAND_DETAIL_CONTENT = {
         visionEn: 'To expand as a trusted supplier for recreational, architectural, and industrial projects.',
         differentiatorEs: 'Ofrece un portafolio amplio que mezcla utilidad diaria con piezas especiales para espacios de alto trafico.',
         differentiatorEn: 'It offers a broad portfolio that mixes everyday utility with special pieces for high-traffic spaces.',
-        primaryCtaEs: 'Explorar catalogo',
-        primaryCtaEn: 'Explore catalog',
+        primaryCtaEs: 'Explorar sitio',
+        primaryCtaEn: 'Explore site',
         primaryCtaType: 'website',
         mapUrl: 'https://maps.google.com/?q=Satelite+Norte+Santa+Cruz+Bolivia'
     }
@@ -484,26 +483,26 @@ const COMPLETE_GALLERIES = {
       descriptionEs: "Especialista en materiales resistentes al agua para espacios para yesica, ambientes marinos y proyectos expuestos a la humedad.",
         fullDescription: "AQUAPARK leads in water-resistant composite solutions, providing durable materials specifically designed for marine and aquatic applications. Our products withstand harsh water environments, UV exposure, and chemical corrosion while maintaining structural integrity. Trusted by marine engineers, boat builders, and waterfront construction companies worldwide.",
     1: [
-        "img/fiberglass/fiberglass6.jpg",
-        "img/fiberglass/fiberglass13.png",
-        "img/fiberglass/fiberglass14.jpg",
-        "img/fiberglass/fiberglass15.png",
-        "img/fiberglass/fiberglass16.jpg",
-        "img/fiberglass/fiberglass10.jpg",
-        "img/fiberglass/fiberglass5.jpg",
-        "img/fiberglass/fiberglass12.jpg",
-        "img/fiberglass/fiberglass8.jpg",
+        "img/fiberglass/fiberglass1.jpeg",
+        "img/fiberglass/fiberglass2.jpeg",
+        "img/fiberglass/fiberglass3.jpeg",
+        "img/fiberglass/fiberglass10.png",
+        "img/fiberglass/fiberglass5.jpeg",
+        "img/fiberglass/fiberglass6.jpeg",
+        "img/fiberglass/fiberglass17.jpeg",
+        "img/fiberglass/fiberglass8.jpeg",
+        "img/fiberglass/fiberglass13.jpeg",
+     
     ],
     2: [
-        "img/montenegro/montenegro.jpg",
-        "img/montenegro/montenegro2.jpg",
-        "img/montenegro/montenegro3.jpg",
-        "img/montenegro/montenegro4.jpg",
-        "img/montenegro/montenegro5.jpg",
-        "img/montenegro/montenegro6.jpg",
-        "img/montenegro/montenegro7.jpg",
-        "img/montenegro/montenegro8.jpg",
-        "img/montenegro/montenegro9.jpg",
+        "img/montenegro/montenegro1.jpeg",
+        "img/montenegro/montenegro2.jpeg",
+        "img/montenegro/montenegro3.jpeg",
+        "img/montenegro/montenegro4.jpeg",
+        "img/montenegro/montenegro5.jpeg",
+        "img/montenegro/montenegro6.jpeg",
+        "img/montenegro/montenegro7.jpeg",
+        "img/montenegro/montenegro8.png",
         "img/montenegro/montenegro9.jpg"
     ],
     3: [
@@ -518,26 +517,26 @@ const COMPLETE_GALLERIES = {
         "img/aquapark/aquapark17.png",
     ],
     4: [
-        "img/fibrotek/fibrotek.jpg",
-        "img/fibrotek/fibrotek1.jpg",
-        "img/fibrotek/fibrotek2.jpg",
-        "img/fibrotek/fibrotek3.jpg",
-        "img/fibrotek/fibrotek4.jpg",
-        "img/fibrotek/fibrotek5.jpg",
-        "img/fibrotek/fibrotek6.jpg",
-        "img/fibrotek/fibrotek7.jpg",
-        "img/fibrotek/fibrotek8.jpg"
+        "img/fibrotek/fibrotek1.jpeg",
+        "img/fibrotek/fibrotek2.jpeg",
+        "img/fibrotek/fibrotek3.jpeg",
+        "img/fibrotek/fibrotek4.jpeg",
+        "img/fibrotek/fibrotek5.jpeg",
+        "img/fibrotek/fibrotek6.jpeg",
+        "img/fibrotek/fibrotek7.jpeg",
+        "img/fibrotek/fibrotek8.jpeg",
+        "img/fibrotek/fibrotek10.png"
     ],
     5: [
-        "img/reforplaz/reforplaz.jpg",
+        "img/reforplaz/reforplaz1.jpg",
         "img/reforplaz/reforplaz2.jpg",
+        "img/reforplaz/reforplaz3.jpg",
         "img/reforplaz/reforplaz4.jpg",
-        "img/reforplaz/reforplaz5.jpg",
+        "img/reforplaz/reforplaz5.jpeg",
         "img/reforplaz/reforplaz6.jpg",
-        "img/reforplaz/reforplaz12.jpeg",
-        "img/reforplaz/reforplaz13.jpeg",
-        "img/reforplaz/reforplaz14.jpeg",
-        "img/reforplaz/reforplaz15.jpeg"
+        "img/reforplaz/reforplaz7.jpg",
+        "img/reforplaz/reforplaz8.jpeg",
+        "img/reforplaz/reforplaz9.jpg",
     ],
 };
 
@@ -547,6 +546,29 @@ const GALLERY_FEATURED_SELECTIONS = {
     3: [4, 6, 8, 2],
     4: [3, 5, 7, 1],
     5: [5, 6, 8, 2]
+};
+
+const GALLERY_DESCRIPTION_CONTEXT = {
+    1: {
+        summaryEs: 'una pieza desarrollada en fibra de vidrio para aplicaciones recreativas, decorativas o funcionales',
+        summaryEn: 'a fiberglass piece developed for recreational, decorative, or functional uses'
+    },
+    2: {
+        summaryEs: 'una obra acuática o monumental diseñada para destacar por su escala, forma y presencia visual',
+        summaryEn: 'an aquatic or monumental work designed to stand out through scale, form, and visual presence'
+    },
+    3: {
+        summaryEs: 'una propuesta recreativa enfocada en piscinas, toboganes y experiencias acuáticas familiares',
+        summaryEn: 'a recreational proposal focused on pools, slides, and family aquatic experiences'
+    },
+    4: {
+        summaryEs: 'una solución en fibra de vidrio pensada para uso comercial, recreativo o decorativo',
+        summaryEn: 'a fiberglass solution created for commercial, recreational, or decorative use'
+    },
+    5: {
+        summaryEs: 'un proyecto elaborado en fibra de vidrio o mármol reconstituido para espacios recreativos o arquitectónicos',
+        summaryEn: 'a project made in fiberglass or reconstituted marble for recreational or architectural spaces'
+    }
 };
 
 const ASSET_PREFIX = window.location.pathname.includes('/html/') ? '../' : '';
@@ -1047,6 +1069,9 @@ const state = {
     bookingData: {},
     currentGalleryIndex: 0,
     currentHomeVideoIndex: 0,
+    gallerySlideshowTimer: null,
+    gallerySlideshowPlaying: true,
+    gallerySlideshowDuration: 5000,
     galleryInitialized: false,
     homeVideoRailInitialized: false
 };
@@ -1352,6 +1377,11 @@ function prefersHoverVideoPlayback() {
         && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 }
 
+function usesCompactHomeVideoGrid() {
+    return typeof window.matchMedia === 'function'
+        && window.matchMedia('(min-width: 1101px)').matches;
+}
+
 function initHomeVideoStageReveal(section) {
     const stage = section?.querySelector('.home-video-stage');
     if (!stage || stage.dataset.revealReady === 'true') {
@@ -1419,10 +1449,16 @@ function pauseHomeVideo(video, resetToStart = false) {
 function syncHomeVideoPlayback() {
     const videos = document.querySelectorAll('.home-video-media');
     const useHoverPlayback = prefersHoverVideoPlayback();
+    const useCompactGridPlayback = usesCompactHomeVideoGrid();
 
     videos.forEach((video, index) => {
         const card = video.closest('.home-video-card');
         const isHovered = card?.dataset.hoverActive === 'true';
+
+        if (useCompactGridPlayback) {
+            playHomeVideo(video, index === 0);
+            return;
+        }
 
         if (useHoverPlayback) {
             if (isHovered) {
@@ -1644,7 +1680,18 @@ function renderParks(parks) {
     });
 
     document.querySelectorAll('.featured-brand-card .contact-btn, .parks-showcase-card .contact-btn').forEach(btn => {
-        btn.addEventListener('click', () => openBookingModal(parseInt(btn.dataset.parkId)));
+        btn.addEventListener('click', () => {
+            const parkId = parseInt(btn.dataset.parkId, 10);
+            const park = PARKS_DATA.find(item => item.id === parkId);
+            const href = getBrandDirectContactHref(park, currentLanguage);
+
+            if (href) {
+                window.open(href, '_blank', 'noopener,noreferrer');
+                return;
+            }
+
+            openBookingModal(parkId);
+        });
     });
 }
 
@@ -1668,7 +1715,18 @@ function renderFeaturedBrands(parks) {
     });
 
     document.querySelectorAll('.featured-brand-card .contact-btn').forEach(btn => {
-        btn.addEventListener('click', () => openBookingModal(parseInt(btn.dataset.parkId)));
+        btn.addEventListener('click', () => {
+            const parkId = parseInt(btn.dataset.parkId, 10);
+            const park = PARKS_DATA.find(item => item.id === parkId);
+            const href = getBrandDirectContactHref(park, currentLanguage);
+
+            if (href) {
+                window.open(href, '_blank', 'noopener,noreferrer');
+                return;
+            }
+
+            openBookingModal(parkId);
+        });
     });
 }
 
@@ -1867,12 +1925,14 @@ function getProjectsMegaConfig(currentLanguage) {
             brandTitle: isEs ? 'Marcas' : 'Brands',
             visuals: [
                 {
-                    image: '../img/fiberglass/fiberglass9.jpg',
+                    image: '../img/fiberglass/fiberglass14.jpg',
+                    position: 'center center',
                     label: isEs ? 'Explorar todas las empresas' : 'Explore all companies',
                     href: parksSectionHref
                 },
                 {
-                    image: '../img/montenegro/montenegro3.jpg',
+                    image: '../img/montenegro/montenegro24.jpg',
+                    position: 'center center',
                     label: isEs ? 'Ir a contacto comercial' : 'Go to commercial contact',
                     href: contactPath
                 }
@@ -1905,8 +1965,8 @@ function getProjectsMegaConfig(currentLanguage) {
             ],
             brandTitle: isEs ? 'Marcas' : 'Brands',
             visuals: [
-                { image: '../img/aquapark/aquapark2.jpg', label: isEs ? 'Ver linea acuapark' : 'See Aquapark line', href: buildBrandDetailsUrl(aquapark.id) },
-                { image: '../img/reforplaz/reforplaz8.jpg', label: isEs ? 'Abrir marca reforplaz' : 'Open Reforplaz brand', href: buildBrandDetailsUrl(reforplaz.id) }
+                { image: '../img/aquapark/aquapark24.jpeg', position: 'center center', label: isEs ? 'Ver linea acuapark' : 'See Aquapark line', href: buildBrandDetailsUrl(aquapark.id) },
+                { image: '../img/reforplaz/reforplaz23.jpeg', position: 'center top', label: isEs ? 'Abrir marca reforplaz' : 'Open Reforplaz brand', href: buildBrandDetailsUrl(reforplaz.id) }
             ]
         },
         marcas: {
@@ -1936,8 +1996,8 @@ function getProjectsMegaConfig(currentLanguage) {
             ],
             brandTitle: isEs ? 'Abrir marca' : 'Open brand',
             visuals: [
-                { image: '../img/fibrotek/fibrotek1.jpg', label: isEs ? 'Abrir marcas recomendadas' : 'Open recommended brands', href: buildBrandDetailsUrl(fibrotek.id) },
-                { image: '../img/montenegro/montenegro0.png', label: isEs ? 'Comparar empresas' : 'Compare companies', href: parksSectionHref }
+                { image: '../img/fibrotek/fibrotek18.jpeg', position: 'center center', label: isEs ? 'Abrir marcas recomendadas' : 'Open recommended brands', href: buildBrandDetailsUrl(fibrotek.id) },
+                { image: '../img/montenegro/montenegro25.jpeg', position: 'center center', label: isEs ? 'Comparar empresas' : 'Compare companies', href: parksSectionHref }
             ]
         },
         soluciones: {
@@ -1967,8 +2027,8 @@ function getProjectsMegaConfig(currentLanguage) {
             ],
             brandTitle: isEs ? 'Marcas' : 'Brands',
             visuals: [
-                { image: '../img/fiberglass/fiberglass5.jpg', label: isEs ? 'Soluciones por proyecto' : 'Solutions by project', href: parksSectionHref },
-                { image: '../img/aquapark/aquapark6.jpg', label: isEs ? 'Explorar mas opciones' : 'Explore more options', href: parksSectionHref }
+                { image: '../img/fiberglass/fiberglass6.jpeg', position: 'center center', label: isEs ? 'Soluciones por proyecto' : 'Solutions by project', href: parksSectionHref },
+                { image: '../img/aquapark/aquapark25.JPG', position: 'center center', label: isEs ? 'Explorar mas opciones' : 'Explore more options', href: parksSectionHref }
             ]
         }
     };
@@ -1989,6 +2049,15 @@ function renderProjectsMegaMenu(activeTab = 'proyectos') {
     });
 
     panel.innerHTML = `
+        <div class="projects-mega-hero-visuals">
+            ${config.visuals.map((visual, index) => `
+                <a class="projects-mega-visual-card projects-mega-visual-card-hero" href="${visual.href}" data-project-visual-index="${index}" style="--mega-visual-position: ${visual.position || 'center center'};">
+                    <img src="${visual.image}" alt="${visual.label}" loading="lazy">
+                    <span class="projects-mega-visual-label">${visual.label}</span>
+                </a>
+            `).join('')}
+        </div>
+
         <div class="projects-mega-grid">
             <div class="projects-mega-column">
                 <div class="projects-mega-column-title">${config.leftTitle}</div>
@@ -2015,36 +2084,31 @@ function renderProjectsMegaMenu(activeTab = 'proyectos') {
             </div>
 
             <div class="projects-mega-column">
-                <div class="projects-mega-column-title">${config.materialTitle}</div>
-                <div class="projects-mega-feature-list">
-                    ${config.materialItems.map(item => `
-                        <a class="projects-mega-entry projects-mega-feature-item" href="${item.href}">
-                            <span class="projects-mega-entry-label">${isEs ? item.labelEs : item.labelEn}</span>
-                            <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 54)}</span>
-                        </a>
-                    `).join('')}
+                <div class="projects-mega-subsection">
+                    <div class="projects-mega-column-title">${config.materialTitle}</div>
+                    <div class="projects-mega-feature-list">
+                        ${config.materialItems.map(item => `
+                            <a class="projects-mega-entry projects-mega-feature-item" href="${item.href}">
+                                <span class="projects-mega-entry-label">${isEs ? item.labelEs : item.labelEn}</span>
+                                <span class="projects-mega-entry-copy">${getCompactMegaCopy(isEs ? item.descriptionEs : item.descriptionEn, 54)}</span>
+                            </a>
+                        `).join('')}
+                    </div>
                 </div>
             </div>
 
-            <div class="projects-mega-column">
-                <div class="projects-mega-column-title">${config.brandTitle}</div>
-                <div class="projects-mega-brand-list">
-                    ${sortedBrands.map(park => `
-                        <a class="projects-mega-brand-item" href="${buildBrandDetailsUrl(park.id)}">
-                            <span>${park.name}</span>
-                            <span>${getCompactMegaCopy(getMegaBrandMeta(park, currentLanguage), 46)}</span>
-                        </a>
-                    `).join('')}
+            <div class="projects-mega-column projects-mega-column-rich">
+                <div class="projects-mega-subsection">
+                    <div class="projects-mega-column-title">${config.brandTitle}</div>
+                    <div class="projects-mega-brand-list">
+                        ${sortedBrands.map(park => `
+                            <a class="projects-mega-brand-item" href="${buildBrandDetailsUrl(park.id)}">
+                                <span>${park.name}</span>
+                                <span>${getCompactMegaCopy(getMegaBrandMeta(park, currentLanguage), 46)}</span>
+                            </a>
+                        `).join('')}
+                    </div>
                 </div>
-            </div>
-
-            <div class="projects-mega-visuals">
-                ${config.visuals.map((visual, index) => `
-                    <a class="projects-mega-visual-card" href="${visual.href}" data-project-visual-index="${index}">
-                        <img src="${visual.image}" alt="${visual.label}" loading="lazy">
-                        <span class="projects-mega-visual-label">${visual.label}</span>
-                    </a>
-                `).join('')}
             </div>
         </div>
     `;
@@ -2480,11 +2544,6 @@ function getBrandExternalLinks(park) {
             icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8.2h2.77l.42-3.2H13.5V8.56c0-.93.27-1.56 1.6-1.56h1.71V4.14c-.3-.04-1.3-.14-2.48-.14-2.46 0-4.14 1.5-4.14 4.25v2.35H7.4v3.2h2.79V22h3.31Z"/></svg>'
         },
         {
-            key: 'instagram',
-            label: translateText('Instagram'),
-            icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95Zm8.98 1.35a1.12 1.12 0 1 1 0 2.24 1.12 1.12 0 0 1 0-2.24ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.15 5.15 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z"/></svg>'
-        },
-        {
             key: 'email',
             label: translateText('Email'),
             icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm16.8 2H4.2L12 12.6 19.8 7Zm.2 2.48-7.43 5.34a1 1 0 0 1-1.14 0L4 9.48V17h16V9.48Z"/></svg>'
@@ -2538,7 +2597,7 @@ function getBrandDetailProfile(park, currentLanguage) {
         mission: currentLanguage === 'es' ? (profile.missionEs || '') : (profile.missionEn || ''),
         vision: currentLanguage === 'es' ? (profile.visionEs || '') : (profile.visionEn || ''),
         differentiator: currentLanguage === 'es' ? (profile.differentiatorEs || '') : (profile.differentiatorEn || ''),
-        primaryCtaLabel: currentLanguage === 'es' ? (profile.primaryCtaEs || 'Explorar') : (profile.primaryCtaEn || 'Explore'),
+        primaryCtaLabel: currentLanguage === 'es' ? (profile.primaryCtaEs || 'Explorar sitio') : (profile.primaryCtaEn || 'Explore site'),
         primaryCtaType: profile.primaryCtaType || 'website',
         mapUrl: profile.mapUrl || ''
     };
@@ -2552,9 +2611,27 @@ function getBrandPrimaryCtaHref(park, profile) {
     return park.contactLinks[profile.primaryCtaType]
         || park.contactLinks.website
         || park.contactLinks.facebook
-        || park.contactLinks.instagram
         || park.contactLinks.whatsapp
         || '';
+}
+
+function getBrandDirectContactHref(park, currentLanguage = 'es') {
+    if (!park || !park.contactLinks) {
+        return '';
+    }
+
+    const links = park.contactLinks;
+    const isEs = currentLanguage === 'es';
+
+    if (typeof links.whatsapp === 'string' && links.whatsapp) {
+        const message = isEs
+            ? `Hola, quiero comunicarme con ${park.name}. ¿Podrían darme más información, por favor?`
+            : `Hello, I want to contact ${park.name}. Could you share more information, please?`;
+        const separator = links.whatsapp.includes('?') ? '&' : '?';
+        return `${links.whatsapp}${separator}text=${encodeURIComponent(message)}`;
+    }
+
+    return links.website || links.facebook || links.email || '';
 }
 
 function getBrandContactItems(park, currentLanguage, profile) {
@@ -2566,8 +2643,8 @@ function getBrandContactItems(park, currentLanguage, profile) {
     return [
         {
             label: isEs ? 'Redes sociales' : 'Social media',
-            value: [links.facebook ? 'Facebook' : '', links.instagram ? 'Instagram' : ''].filter(Boolean).join(' / ') || (isEs ? 'No disponible' : 'Not available'),
-            href: links.instagram || links.facebook || ''
+            value: links.facebook ? 'Facebook' : (isEs ? 'No disponible' : 'Not available'),
+            href: links.facebook || ''
         },
         {
             label: isEs ? 'Sitio web' : 'Website',
@@ -2834,7 +2911,7 @@ function showParkDetails(parkId) {
                         ${primaryCtaHref ? `
                             <a class="btn btn-primary park-brand-primary-btn" href="${primaryCtaHref}" target="_blank" rel="noopener noreferrer">${profile.primaryCtaLabel}</a>
                         ` : `
-                            <button class="btn btn-primary park-brand-primary-btn" type="button" onclick="openBookingModal(${park.id})">${isEs ? 'Explorar' : 'Explore'}</button>
+                            <button class="btn btn-primary park-brand-primary-btn" type="button" onclick="openBookingModal(${park.id})">${isEs ? 'Explorar sitio' : 'Explore site'}</button>
                         `}
                     </div>
                 </div>
@@ -2895,9 +2972,9 @@ function showParkDetails(parkId) {
                     <p class="park-brand-closing-copy">${isEs ? 'Cierra esta visita con una accion clara: explora mas de la marca o contacta directamente para avanzar.' : 'Close this visit with a clear action: explore more about the brand or contact it directly to move forward.'}</p>
                     <div class="park-detail-actions park-brand-final-actions">
                         ${primaryCtaHref ? `
-                            <a class="btn btn-secondary" href="${primaryCtaHref}" target="_blank" rel="noopener noreferrer">${isEs ? 'Explorar' : 'Explore'}</a>
+                            <a class="btn btn-secondary" href="${primaryCtaHref}" target="_blank" rel="noopener noreferrer">${isEs ? 'Explorar sitio' : 'Explore site'}</a>
                         ` : `
-                            <button class="btn btn-secondary" type="button" onclick="setParkModalVisibility(false)">${isEs ? 'Explorar' : 'Explore'}</button>
+                            <button class="btn btn-secondary" type="button" onclick="setParkModalVisibility(false)">${isEs ? 'Explorar sitio' : 'Explore site'}</button>
                         `}
                         ${directContactHref ? `
                             <a class="btn btn-primary" href="${directContactHref}" target="_blank" rel="noopener noreferrer">${isEs ? 'Contactar' : 'Contact'}</a>
@@ -3014,62 +3091,38 @@ function initGallery() {
 
     const currentLanguage = state.currentLanguage || 'es';
     const sortedParks = [...PARKS_DATA].sort((a, b) => a.name.localeCompare(b.name));
-    const allImages = [];
     const gallerySectionsMarkup = sortedParks.map((park) => {
-        const localizedContent = getLocalizedParkContent(park, currentLanguage);
-        const galleryImages = getUniqueGalleryImages(park);
+        const galleryImages = getPreferredGalleryImages(park);
         if (galleryImages.length === 0) {
             return '';
         }
 
-        const firstImageIndex = allImages.length;
         const cardsMarkup = galleryImages.map((img, imageIndex) => {
-            const globalIndex = allImages.length;
             const imageDescription = getGalleryImageDescription(park, imageIndex, currentLanguage);
             const imageLabel = currentLanguage === 'es'
                 ? `Imagen ${imageIndex + 1}`
                 : `Image ${imageIndex + 1}`;
 
-            allImages.push({
-                src: resolveAssetPath(img),
-                alt: `${park.name} - ${imageLabel}`,
-                parkId: park.id,
-                title: park.name,
-                label: imageLabel,
-                description: imageDescription
-            });
-
-            const actionLabel = currentLanguage === 'es' ? 'Ver marca' : 'View brand';
-
             return `
-                <button class="gallery-flip-card" type="button" onclick="openImageGallery(${globalIndex})" aria-label="${park.name} ${imageLabel}">
+                <button class="gallery-flip-card" type="button" onclick="openParkGallery(${park.id}, ${imageIndex}, true)" aria-label="${park.name} ${imageLabel}">
                     <span class="gallery-flip-inner">
                         <span class="gallery-face gallery-face-front">
-                            <img src="${resolveAssetPath(img)}" alt="${park.name} ${imageLabel}" loading="lazy">
+                            <img src="${resolveAssetPath(img)}" alt="${park.name} ${imageLabel}" loading="lazy" decoding="async">
                             <span class="gallery-card-gradient"></span>
-                            <span class="gallery-front-copy">
-                                <span class="gallery-front-brand">${park.name}</span>
-                                <span class="gallery-front-index">${imageLabel}</span>
-                            </span>
                         </span>
                         <span class="gallery-face gallery-face-back">
-                            <span class="gallery-back-tag">${park.name}</span>
                             <span class="gallery-back-text">${imageDescription}</span>
-                            <span class="gallery-back-action">${actionLabel}</span>
+                            <span class="gallery-back-action">${currentLanguage === 'es' ? 'Ver foto' : 'View photo'}</span>
                         </span>
                     </span>
                 </button>
             `;
         }).join('');
 
-        const sectionTag = currentLanguage === 'es' ? 'Marca destacada' : 'Featured brand';
+        const sectionTag = currentLanguage === 'es' ? 'Marca' : 'Brand';
         const sectionCount = currentLanguage === 'es'
-            ? `${galleryImages.length} vistas disponibles`
-            : `${galleryImages.length} views available`;
-        const sectionIntro = currentLanguage === 'es'
-            ? 'Colección visual organizada para ubicar mejor cada marca.'
-            : 'Visual collection organized to identify each brand more clearly.';
-
+            ? `${galleryImages.length} imágenes`
+            : `${galleryImages.length} images`;
         const brandTheme = getBrandColorForPark(park);
 
         return `
@@ -3081,9 +3134,6 @@ function initGallery() {
                     </div>
                     <div class="gallery-brand-meta">
                         <span class="gallery-brand-count">${sectionCount}</span>
-                        <button class="gallery-brand-link" type="button" onclick="openImageGallery(${firstImageIndex})">
-                            ${sectionIntro}
-                        </button>
                     </div>
                 </div>
                 <div class="gallery-grid gallery-grid-brands">
@@ -3094,17 +3144,16 @@ function initGallery() {
     }).join('');
 
     galleryGrid.innerHTML = gallerySectionsMarkup;
-
-    window.allGalleryImages = allImages;
 }
 
 function openImageGallery(index) {
     state.currentGalleryIndex = index;
     updateImageModal();
     document.getElementById('imageModal').classList.add('active');
+    startGallerySlideshow();
 }
 
-function openParkGallery(parkId, imageIndex = 0) {
+function openParkGallery(parkId, imageIndex = 0, minimalView = false) {
     const park = PARKS_DATA.find(item => item.id === parkId);
     if (!park) {
         return;
@@ -3127,7 +3176,8 @@ function openParkGallery(parkId, imageIndex = 0) {
             parkId,
             title: park.name,
             label: imageLabel,
-            description: getGalleryImageDescription(park, idx, currentLanguage)
+            description: getGalleryImageDescription(park, idx, currentLanguage),
+            minimal: Boolean(minimalView)
         };
     });
 
@@ -3146,25 +3196,82 @@ function updateImageModal() {
     const modalDescription = document.getElementById('imageModalDescription');
     const modalCount = document.getElementById('imageModalCount');
     const modalThumbs = document.getElementById('imageModalThumbs');
+    const modalScene = document.getElementById('imageModalScene');
+    const modalBackdrop = document.getElementById('imageModalBackdrop');
+    const modalSceneLabel = document.getElementById('imageModalSceneLabel');
+    const modalSceneBrand = document.getElementById('imageModalSceneBrand');
+    const modalSceneOverlay = modalScene ? modalScene.querySelector('.image-modal-scene-overlay') : null;
+    const modalToggle = document.getElementById('imageModalToggle');
+    const modalProgress = document.getElementById('imageModalProgress');
+    const modalInfo = document.querySelector('.image-modal-info');
+    const isMinimalGallery = Boolean(img.minimal);
+
+    if (modalScene) {
+        modalScene.classList.remove('is-animating');
+        void modalScene.offsetWidth;
+        modalScene.classList.add('is-animating');
+    }
 
     modalImage.src = img.src;
     modalImage.alt = img.alt || 'Imagen de galería';
 
+    if (modalBackdrop) {
+        modalBackdrop.style.backgroundImage = `url("${img.src}")`;
+        modalBackdrop.style.display = isMinimalGallery ? 'none' : '';
+    }
+
+    if (modalSceneOverlay) {
+        modalSceneOverlay.style.display = isMinimalGallery ? 'none' : '';
+    }
+
     if (modalTitle) {
         modalTitle.textContent = img.title || '';
+        modalTitle.style.display = isMinimalGallery ? 'none' : '';
     }
 
     if (modalDescription) {
         modalDescription.textContent = img.description || '';
+        modalDescription.style.display = isMinimalGallery ? 'none' : '';
     }
 
     if (modalCount) {
         const total = window.allGalleryImages?.length || 0;
         modalCount.textContent = `${state.currentGalleryIndex + 1} / ${total}`;
+        modalCount.style.display = isMinimalGallery ? 'none' : '';
+    }
+
+    if (modalSceneLabel) {
+        modalSceneLabel.textContent = img.label || '';
+        modalSceneLabel.style.display = isMinimalGallery ? 'none' : '';
+    }
+
+    if (modalSceneBrand) {
+        modalSceneBrand.textContent = img.title || '';
+        modalSceneBrand.style.display = isMinimalGallery ? 'none' : '';
+    }
+
+    if (modalToggle) {
+        const isPlaying = state.gallerySlideshowPlaying;
+        modalToggle.textContent = isPlaying
+            ? (state.currentLanguage === 'es' ? 'Pausar' : 'Pause')
+            : (state.currentLanguage === 'es' ? 'Reproducir' : 'Play');
+        modalToggle.setAttribute('aria-pressed', String(isPlaying));
+        modalToggle.style.display = isMinimalGallery ? 'none' : '';
+    }
+
+    if (modalProgress) {
+        modalProgress.classList.remove('is-running');
+        modalProgress.style.animationDuration = `${state.gallerySlideshowDuration}ms`;
+        modalProgress.style.display = isMinimalGallery ? 'none' : '';
+        void modalProgress.offsetWidth;
+        if (!isMinimalGallery && state.gallerySlideshowPlaying && (window.allGalleryImages?.length || 0) > 1) {
+            modalProgress.classList.add('is-running');
+        }
     }
 
     if (modalThumbs) {
-        modalThumbs.innerHTML = (window.allGalleryImages || []).map((galleryImage, index) => `
+        modalThumbs.style.display = isMinimalGallery ? 'none' : '';
+        modalThumbs.innerHTML = isMinimalGallery ? '' : (window.allGalleryImages || []).map((galleryImage, index) => `
             <button
                 class="image-modal-thumb ${index === state.currentGalleryIndex ? 'active' : ''}"
                 type="button"
@@ -3175,6 +3282,42 @@ function updateImageModal() {
             </button>
         `).join('');
     }
+
+    if (modalInfo) {
+        modalInfo.style.display = isMinimalGallery ? 'none' : '';
+    }
+}
+
+function stopGallerySlideshow() {
+    if (state.gallerySlideshowTimer) {
+        clearInterval(state.gallerySlideshowTimer);
+        state.gallerySlideshowTimer = null;
+    }
+
+    const modalProgress = document.getElementById('imageModalProgress');
+    if (modalProgress) {
+        modalProgress.classList.remove('is-running');
+    }
+}
+
+function startGallerySlideshow() {
+    stopGallerySlideshow();
+
+    if (!state.gallerySlideshowPlaying || !window.allGalleryImages || window.allGalleryImages.length <= 1) {
+        return;
+    }
+
+    const modalProgress = document.getElementById('imageModalProgress');
+    if (modalProgress) {
+        modalProgress.style.animationDuration = `${state.gallerySlideshowDuration}ms`;
+        void modalProgress.offsetWidth;
+        modalProgress.classList.add('is-running');
+    }
+
+    state.gallerySlideshowTimer = setInterval(() => {
+        state.currentGalleryIndex = (state.currentGalleryIndex + 1) % window.allGalleryImages.length;
+        updateImageModal();
+    }, state.gallerySlideshowDuration);
 }
 
 function getGalleryImageDescription(park, imageIndex, language = 'es') {
@@ -3182,25 +3325,15 @@ function getGalleryImageDescription(park, imageIndex, language = 'es') {
     const localized = getLocalizedParkContent(park, language);
     const products = localized.products.length ? localized.products : localized.highlights;
     const leadProduct = products[imageIndex % products.length] || park.name;
+    const context = GALLERY_DESCRIPTION_CONTEXT[park.id] || {};
 
-    const descriptionTemplatesEs = [
-        `${park.name} presenta una vista enfocada en ${leadProduct.toLowerCase()}, con una imagen que refuerza su identidad visual y su propuesta principal.`,
-        `Esta imagen de ${park.name} destaca detalles de ${leadProduct.toLowerCase()} y transmite el estilo técnico y comercial de la marca.`,
-        `Referencia visual de ${park.name} orientada a mostrar ${leadProduct.toLowerCase()} dentro de un contexto más claro, atractivo y profesional.`,
-        `Una escena de ${park.name} que ayuda a entender mejor su línea de ${leadProduct.toLowerCase()} y el tipo de soluciones que ofrece.`,
-        `${park.name} utiliza esta imagen para resaltar ${leadProduct.toLowerCase()} con una presentación visual más elegante y fácil de comparar.`
-    ];
+    if (isEs) {
+        const summary = context.summaryEs || 'una referencia visual del portafolio actual de la marca';
+        return `Vista ${imageIndex + 1} de ${park.name}: muestra ${summary} y refuerza su línea de ${leadProduct.toLowerCase()}.`;
+    }
 
-    const descriptionTemplatesEn = [
-        `${park.name} presents a focused view of ${leadProduct.toLowerCase()}, reinforcing the brand's visual identity and main offer.`,
-        `This ${park.name} image highlights ${leadProduct.toLowerCase()} while communicating the brand's technical and commercial style.`,
-        `A visual reference from ${park.name} designed to showcase ${leadProduct.toLowerCase()} in a clearer and more polished context.`,
-        `This scene from ${park.name} helps explain its ${leadProduct.toLowerCase()} line and the type of solutions it delivers.`,
-        `${park.name} uses this image to emphasize ${leadProduct.toLowerCase()} through a more elegant and easier-to-compare presentation.`
-    ];
-
-    const templates = isEs ? descriptionTemplatesEs : descriptionTemplatesEn;
-    return templates[imageIndex % templates.length];
+    const summary = context.summaryEn || 'a visual reference from the brand’s current portfolio';
+    return `${park.name} view ${imageIndex + 1}: it shows ${summary} and reinforces its ${leadProduct.toLowerCase()} line.`;
 }
 
 // ============ MODAL CONTROLS ============
@@ -3212,6 +3345,7 @@ function initModals() {
     const imagePrev = document.getElementById('imagePrev');
     const imageNext = document.getElementById('imageNext');
     const imageThumbs = document.getElementById('imageModalThumbs');
+    const imageToggle = document.getElementById('imageModalToggle');
     const parkOverlay = getParkModalOverlay();
 
     if (modalClose) {
@@ -3243,6 +3377,7 @@ function initModals() {
             if (imageModal) {
                 imageModal.classList.remove('active');
             }
+            stopGallerySlideshow();
         });
     }
 
@@ -3250,6 +3385,9 @@ function initModals() {
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 modal.classList.remove('active');
+                if (modal.id === 'imageModal') {
+                    stopGallerySlideshow();
+                }
             }
         });
     });
@@ -3259,6 +3397,7 @@ function initModals() {
             if (!window.allGalleryImages || window.allGalleryImages.length === 0) return;
             state.currentGalleryIndex = (state.currentGalleryIndex - 1 + window.allGalleryImages.length) % window.allGalleryImages.length;
             updateImageModal();
+            startGallerySlideshow();
         });
     }
 
@@ -3267,6 +3406,15 @@ function initModals() {
             if (!window.allGalleryImages || window.allGalleryImages.length === 0) return;
             state.currentGalleryIndex = (state.currentGalleryIndex + 1) % window.allGalleryImages.length;
             updateImageModal();
+            startGallerySlideshow();
+        });
+    }
+
+    if (imageToggle) {
+        imageToggle.addEventListener('click', () => {
+            state.gallerySlideshowPlaying = !state.gallerySlideshowPlaying;
+            updateImageModal();
+            startGallerySlideshow();
         });
     }
 
@@ -3279,6 +3427,7 @@ function initModals() {
 
             state.currentGalleryIndex = Number(thumb.dataset.galleryIndex || 0);
             updateImageModal();
+            startGallerySlideshow();
         });
     }
 }
