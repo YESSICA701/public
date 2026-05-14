@@ -11105,3 +11105,295 @@ body.home-page {
         padding: 0.78rem 0.78rem;
     }
 }
+
+@media (max-width: 640px) {
+    .home-page .hero.hostinger-home-hero {
+        padding-top: 5.1rem;
+    }
+
+    .home-page .hero.hostinger-home-hero .container {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        padding-bottom: 0.9rem;
+    }
+
+    .home-page .hero-search-bar-wrap {
+        position: static;
+        width: 100%;
+        margin: 0 0 0.85rem;
+        gap: 0.55rem;
+    }
+
+    .home-page .search-container.hero-search-main,
+    .home-page .hero-search-main .search-wrapper {
+        width: 100%;
+    }
+
+    .home-page .hero-search-main .search-wrapper {
+        min-height: 54px;
+        padding: 0.35rem 0.35rem 0.35rem 0.85rem;
+        border-radius: 18px;
+    }
+
+    .home-page .hero-search-main .search-input {
+        min-width: 0;
+        padding: 0.75rem 0.45rem 0.75rem 0;
+        font-size: 0.95rem;
+    }
+
+    .home-page .hero-search-main .search-btn {
+        min-width: 96px;
+        height: 38px;
+        padding: 0 0.9rem;
+        font-size: 0.92rem;
+    }
+
+    .home-page .hero-stage {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        border-radius: 22px;
+        overflow: hidden;
+        background: rgba(8, 23, 35, 0.35);
+        box-shadow: 0 20px 40px rgba(3, 24, 39, 0.18);
+    }
+
+    .home-page .hero-stage-image {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 240px;
+        min-height: 240px;
+    }
+
+    .home-page .hero-stage-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .home-page .hero-stage-overlay {
+        display: block;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(8, 23, 35, 0.12), rgba(8, 23, 35, 0.34));
+    }
+
+    .home-page .hero-stage-content {
+        position: static;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 1rem 0.95rem 1.05rem;
+        gap: 0.8rem;
+        border-radius: 0;
+        border: 0;
+        background: linear-gradient(180deg, rgba(8, 23, 35, 0.9), rgba(15, 52, 77, 0.96));
+        box-shadow: none;
+        backdrop-filter: none;
+        align-items: stretch;
+        text-align: left;
+    }
+
+    .home-page .hero-title {
+        max-width: none !important;
+        font-size: 1.55rem !important;
+        line-height: 1.02 !important;
+    }
+
+    .home-page .hero-buttons {
+        flex-direction: column;
+        gap: 0.55rem;
+        width: 100%;
+    }
+
+    .home-page .hero-stage-content .btn {
+        width: 100%;
+        min-height: 44px;
+        padding: 0.78rem 0.95rem;
+        font-size: 0.92rem;
+    }
+
+    .home-page .hero-metrics {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.45rem;
+    }
+
+    .home-page .hero-metric {
+        padding: 0.7rem 0.55rem;
+        border-radius: 14px;
+    }
+
+    .home-page .hero-metric-value {
+        font-size: 1.1rem;
+    }
+
+    .home-page .hero-metric-label {
+        font-size: 0.68rem;
+        line-height: 1.2;
+    }
+
+    .home-page .section-header {
+        margin-bottom: 1.5rem;
+        padding-inline: 0.2rem;
+    }
+
+    .home-page .section-title {
+        font-size: 2rem;
+        line-height: 1.02;
+    }
+
+    .home-page .section-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .home-page .featured-brands-preview-section .container,
+    .home-page .gallery-section .container,
+    .home-page .testimonials .container,
+    .home-page .footer .container {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+    }
+
+    .home-page .featured-brand-card-preview {
+        border-radius: 20px;
+    }
+
+    .home-page .preview-card-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 210px auto;
+        min-height: 0;
+    }
+
+    .home-page .preview-image-panel {
+        min-height: 210px;
+        height: 210px;
+        padding: 0.7rem;
+    }
+
+    .home-page .featured-brand-image-preview {
+        min-height: 210px;
+        height: 210px;
+        border-radius: 16px;
+        object-fit: contain;
+    }
+
+    .home-page .featured-brand-content-preview {
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+
+    .home-page .featured-brand-name {
+        font-size: 1.22rem;
+        line-height: 1.12;
+    }
+
+    .home-page .preview-location,
+    .home-page .preview-description,
+    .home-page .featured-brand-preview-features li {
+        font-size: 0.92rem;
+        line-height: 1.55;
+    }
+
+    .home-page .preview-badge {
+        top: 0.75rem;
+        left: 0.75rem;
+        padding: 0.42rem 0.68rem;
+        font-size: 0.76rem;
+    }
+
+    .home-page .preview-rating {
+        left: 0.75rem;
+        bottom: 0.75rem;
+        padding: 0.4rem 0.68rem;
+        font-size: 0.76rem;
+    }
+
+    .home-page .gallery-grid,
+    .home-page .gallery-grid-brands,
+    .home-page .testimonials-grid,
+    .home-page .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-page .gallery-grid,
+    .home-page .testimonials-grid,
+    .home-page .footer-grid {
+        gap: 1rem;
+    }
+
+    .home-page .gallery-brand-block,
+    .home-page .testimonial-card,
+    .home-page .home-transition-card,
+    .home-page .cta-content {
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    .home-page .gallery-flip-card {
+        aspect-ratio: 1 / 1.08;
+    }
+
+    .home-page .footer-grid {
+        text-align: left;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-page .hero.hostinger-home-hero .container,
+    .home-page .featured-brands-preview-section .container,
+    .home-page .gallery-section .container,
+    .home-page .testimonials .container,
+    .home-page .footer .container {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+    .home-page .hero-stage-image {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .home-page .hero-stage-content {
+        padding: 0.95rem 0.85rem 1rem;
+    }
+
+    .home-page .hero-title {
+        font-size: 1.42rem !important;
+    }
+
+    .home-page .hero-metrics {
+        gap: 0.38rem;
+    }
+
+    .home-page .hero-metric {
+        padding: 0.62rem 0.45rem;
+    }
+
+    .home-page .hero-metric-value {
+        font-size: 1rem;
+    }
+
+    .home-page .section-title {
+        font-size: 1.75rem;
+    }
+
+    .home-page .preview-card-grid {
+        grid-template-rows: 190px auto;
+    }
+
+    .home-page .preview-image-panel,
+    .home-page .featured-brand-image-preview {
+        min-height: 190px;
+        height: 190px;
+    }
+
+    .home-page .gallery-flip-card {
+        aspect-ratio: 1 / 1.16;
+    }
+}
