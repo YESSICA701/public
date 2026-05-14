@@ -486,35 +486,34 @@ const COMPLETE_GALLERIES = {
         "img/fiberglass/fiberglass1.jpeg",
         "img/fiberglass/fiberglass2.jpeg",
         "img/fiberglass/fiberglass3.jpeg",
-        "img/fiberglass/fiberglass10.png",
-        "img/fiberglass/fiberglass5.jpeg",
+        "img/fiberglass/fiberglass4.png",
+        "img/fiberglass/fiberglass5.png",
         "img/fiberglass/fiberglass6.jpeg",
-        "img/fiberglass/fiberglass17.jpeg",
+        "img/fiberglass/fiberglass7.jpeg",
         "img/fiberglass/fiberglass8.jpeg",
-        "img/fiberglass/fiberglass13.jpeg",
+        "img/fiberglass/fiberglass9.png",
      
     ],
     2: [
+        "img/montenegro/montenegro0.png",
         "img/montenegro/montenegro1.jpeg",
         "img/montenegro/montenegro2.jpeg",
-        "img/montenegro/montenegro3.jpeg",
-        "img/montenegro/montenegro4.jpeg",
-        "img/montenegro/montenegro5.jpeg",
-        "img/montenegro/montenegro6.jpeg",
-        "img/montenegro/montenegro7.jpeg",
-        "img/montenegro/montenegro8.png",
+        "img/montenegro/montenegro3.png",
+        "img/montenegro/montenegro4.png",
+        "img/montenegro/montenegro5.png",
+        "img/montenegro/montenegro6.jpg",
         "img/montenegro/montenegro9.jpg"
     ],
     3: [
-        "img/aquapark/aquapark9.png",
-        "img/aquapark/aquapark10.png",
-        "img/aquapark/aquapark11.png",
-        "img/aquapark/aquapark12.png",
-        "img/aquapark/aquapark13.png",
-        "img/aquapark/aquapark14.png",
-        "img/aquapark/aquapark15.png",
-        "img/aquapark/aquapark16.png",
-        "img/aquapark/aquapark17.png",
+        "img/aquapark/aquapark1.jpg",
+        "img/aquapark/aquapark2.jpg",
+        "img/aquapark/aquapark3.jpeg",
+        "img/aquapark/aquapark4.png",
+        "img/aquapark/aquapark5.jpeg",
+        "img/aquapark/aquapark6.jpg",
+        "img/aquapark/aquapark7.jpeg",
+        "img/aquapark/aquapark8.jpeg",
+        "img/aquapark/aquapark9.jpeg"
     ],
     4: [
         "img/fibrotek/fibrotek1.jpeg",
@@ -523,20 +522,21 @@ const COMPLETE_GALLERIES = {
         "img/fibrotek/fibrotek4.jpeg",
         "img/fibrotek/fibrotek5.jpeg",
         "img/fibrotek/fibrotek6.jpeg",
-        "img/fibrotek/fibrotek7.jpeg",
+        "img/fibrotek/fibrotek7.png",
         "img/fibrotek/fibrotek8.jpeg",
-        "img/fibrotek/fibrotek10.png"
+        "img/fibrotek/fibrotek9.jpeg"
     ],
     5: [
-        "img/reforplaz/reforplaz1.jpg",
-        "img/reforplaz/reforplaz2.jpg",
+        "img/reforplaz/reforplaz0.png",
+        "img/reforplaz/reforplaz1.png",
+        "img/reforplaz/reforplaz18.jpeg",
+        "img/reforplaz/reforplaz2.jpeg",
         "img/reforplaz/reforplaz3.jpg",
-        "img/reforplaz/reforplaz4.jpg",
+        "img/reforplaz/reforplaz4.png",
         "img/reforplaz/reforplaz5.jpeg",
-        "img/reforplaz/reforplaz6.jpg",
-        "img/reforplaz/reforplaz7.jpg",
-        "img/reforplaz/reforplaz8.jpeg",
-        "img/reforplaz/reforplaz9.jpg",
+        "img/reforplaz/reforplaz6.jpeg",
+        "img/reforplaz/reforplaz7.png",
+        "img/reforplaz/reforplaz8.jpeg"
     ],
 };
 
@@ -551,23 +551,133 @@ const GALLERY_FEATURED_SELECTIONS = {
 const GALLERY_DESCRIPTION_CONTEXT = {
     1: {
         summaryEs: 'una pieza desarrollada en fibra de vidrio para aplicaciones recreativas, decorativas o funcionales',
-        summaryEn: 'a fiberglass piece developed for recreational, decorative, or functional uses'
+        summaryEn: 'a fiberglass piece developed for recreational, decorative, or functional uses',
+        descriptionsEs: [
+            'Vista principal de una pieza recreativa en fibra de vidrio donde se aprecia el volumen general, el color aplicado y la limpieza del acabado.',
+            'Imagen de producto funcional con terminación uniforme, pensada para espacios comerciales o recreativos de uso constante.',
+            'Referencia visual de una solución fabricada para combinar resistencia estructural, presencia visual y mantenimiento práctico.',
+            'Detalle del portafolio Fiberglass donde se destaca la versatilidad de la marca en formas, acabados y aplicaciones decorativas o utilitarias.',
+            'Vista de una pieza fabricada con énfasis en durabilidad, terminación prolija y adaptación a distintos usos.',
+            'Imagen que muestra una solución de catálogo pensada para combinar utilidad diaria y buena presencia visual.',
+            'Referencia de producto en fibra de vidrio donde se aprecia el trabajo de forma, color y resistencia del material.',
+            'Detalle de una aplicación funcional con acabado limpio, orientada a espacios recreativos o comerciales.',
+            'Muestra adicional del portafolio de la marca, enfocada en variedad de diseño y consistencia de fabricación.'
+        ],
+        descriptionsEn: [
+            'Main view of a recreational fiberglass piece showing overall volume, applied color, and finish quality.',
+            'Product image with a uniform finish, created for commercial or recreational spaces with continuous use.',
+            'Visual reference of a solution that combines structural strength, visual presence, and practical maintenance.',
+            'Fiberglass portfolio detail highlighting the brand’s versatility in shapes, finishes, and decorative or functional applications.',
+            'View of a piece made with emphasis on durability, clean finishing, and adaptability to different uses.',
+            'Catalog solution designed to combine everyday utility and strong visual presence.',
+            'Product reference showing shape work, color treatment, and material strength.',
+            'Functional application detail with a clean finish for recreational or commercial spaces.',
+            'Additional portfolio sample focused on design variety and manufacturing consistency.'
+        ]
     },
     2: {
         summaryEs: 'una obra acuática o monumental diseñada para destacar por su escala, forma y presencia visual',
-        summaryEn: 'an aquatic or monumental work designed to stand out through scale, form, and visual presence'
+        summaryEn: 'an aquatic or monumental work designed to stand out through scale, form, and visual presence',
+        descriptionsEs: [
+            'Vista general de una obra Montenegro donde se percibe la escala del proyecto, su composición visual y el carácter monumental del diseño.',
+            'Imagen de estructura recreativa con énfasis en el recorrido del usuario, la integración de formas y el impacto estético del conjunto.',
+            'Detalle de proyecto acuático donde se aprecian acabados, color y una propuesta visual pensada para destacar dentro del espacio.',
+            'Referencia del portafolio monumental de la marca, enfocada en presencia escénica, diseño artístico y experiencia visual.',
+            'Vista de una obra donde se aprecia la mezcla entre construcción, escala y lenguaje decorativo aplicado al proyecto.',
+            'Imagen de instalación recreativa con protagonismo de forma, color y composición arquitectónica.',
+            'Detalle visual de una propuesta pensada para generar impacto dentro de un espacio familiar o público.',
+            'Muestra adicional del portafolio Montenegro, centrada en presencia visual, recorrido y volumen de la obra.'
+        ],
+        descriptionsEn: [
+            'General view of a Montenegro project highlighting scale, visual composition, and monumental design character.',
+            'Recreational structure focused on user flow, integrated forms, and the aesthetic impact of the whole installation.',
+            'Aquatic project detail showing finishes, color, and a visual proposal designed to stand out within the space.',
+            'Monumental portfolio reference centered on scenic presence, artistic design, and visual experience.',
+            'View of a project combining construction, scale, and decorative language.',
+            'Recreational installation image focused on shape, color, and architectural composition.',
+            'Visual detail of a proposal designed to create impact in a family or public setting.',
+            'Additional Montenegro portfolio sample centered on visual presence, flow, and spatial volume.'
+        ]
     },
     3: {
         summaryEs: 'una propuesta recreativa enfocada en piscinas, toboganes y experiencias acuáticas familiares',
-        summaryEn: 'a recreational proposal focused on pools, slides, and family aquatic experiences'
+        summaryEn: 'a recreational proposal focused on pools, slides, and family aquatic experiences',
+        descriptionsEs: [
+            'Diseño corporativo con temática tropical y acuática que combina colores vibrantes en tonos verde, amarillo y azul. ',
+            'Imagen de toboganes y entorno acuático que comunica diversión, color y perfil comercial del proyecto.',
+            'Escena centrada en la experiencia familiar, con elementos diseñados para atraer distintas edades en un mismo espacio.',
+            'Referencia visual del portafolio AquaPark con énfasis en impacto recreativo, ambientación vacacional y recordación de marca.',
+            'Vista de instalación acuática donde se aprecia el vínculo entre entretenimiento, escala y uso familiar.',
+            'Imagen de proyecto recreativo orientado a generar experiencia visual y permanencia del visitante.',
+            'Detalle de espacio acuático con protagonismo de juego, color y composición general del entorno.',
+            'Muestra comercial del portafolio AquaPark pensada para destacar diversión, movimiento y atractivo visual.',
+            'Referencia adicional de una propuesta familiar donde piscina y estructura trabajan como un solo conjunto.'
+        ],
+        descriptionsEn: [
+            'View of a family aquatic proposal showing balance between pool, play elements, and recreational circulation.',
+            'Image of slides and aquatic surroundings that communicates fun, color, and the project’s commercial profile.',
+            'Scene centered on family experience, with elements designed to attract different age groups in one space.',
+            'AquaPark visual reference focused on recreational impact, vacation atmosphere, and brand recall.',
+            'Aquatic installation view showing the relationship between entertainment, scale, and family use.',
+            'Recreational project image designed to create visual experience and visitor engagement.',
+            'Aquatic space detail centered on play elements, color, and overall composition.',
+            'Commercial AquaPark sample built to highlight fun, movement, and visual appeal.',
+            'Additional family proposal reference where pool and structure work as one integrated whole.'
+        ]
     },
     4: {
         summaryEs: 'una solución en fibra de vidrio pensada para uso comercial, recreativo o decorativo',
-        summaryEn: 'a fiberglass solution created for commercial, recreational, or decorative use'
+        summaryEn: 'a fiberglass solution created for commercial, recreational, or decorative use',
+        descriptionsEs: [
+            'Vista de una pieza Fibrotek donde se aprecia una aplicación práctica con acabado visual limpio y presencia comercial.',
+            'Referencia de solución en fibra de vidrio que destaca por su forma, utilidad y resistencia para uso constante.',
+            'Imagen de producto pensado para combinar creatividad, fabricación funcional y adaptación a distintos entornos.',
+            'Detalle del portafolio Fibrotek donde se percibe la versatilidad de la marca en soluciones decorativas o comerciales.',
+            'Vista de una pieza fabricada para responder a necesidades visibles, funcionales y de larga duración.',
+            'Imagen de solución comercial donde se aprecia proporción, acabado y facilidad de integración en el espacio.',
+            'Referencia de producto adaptable a contextos recreativos, urbanos o de servicio continuo.',
+            'Muestra visual del catálogo Fibrotek con énfasis en utilidad, resistencia y propuesta formal.',
+            'Detalle adicional que refuerza la variedad de fabricación de la marca en piezas especiales y de uso diario.'
+        ],
+        descriptionsEn: [
+            'View of a Fibrotek piece showing a practical application with a clean finish and commercial presence.',
+            'Fiberglass solution reference highlighting form, usability, and strength for continuous use.',
+            'Product image created to combine creativity, functional manufacturing, and adaptability to different settings.',
+            'Fibrotek portfolio detail showing the brand’s versatility in decorative or commercial solutions.',
+            'View of a piece made for visible, functional, and long-lasting use.',
+            'Commercial solution image showing proportion, finish, and easy integration within a space.',
+            'Product reference adaptable to recreational, urban, or continuous-service contexts.',
+            'Catalog sample focused on utility, resistance, and formal design.',
+            'Additional detail reinforcing the brand’s range in special and everyday-use pieces.'
+        ]
     },
     5: {
         summaryEs: 'un proyecto elaborado en fibra de vidrio o mármol reconstituido para espacios recreativos o arquitectónicos',
-        summaryEn: 'a project made in fiberglass or reconstituted marble for recreational or architectural spaces'
+        summaryEn: 'a project made in fiberglass or reconstituted marble for recreational or architectural spaces',
+        descriptionsEs: [
+            'Vista de una solución Reforplaz orientada a espacios recreativos o urbanos, con enfoque práctico y buena presencia visual.',
+            'Imagen de producto fabricado para responder a uso diario sin perder limpieza formal ni resistencia del material.',
+            'Referencia de pieza pensada para proyectos arquitectónicos, públicos o comerciales donde la utilidad es clave.',
+            'Detalle del portafolio Reforplaz que resume su perfil funcional, resistente y adaptable a distintos escenarios.',
+            'Vista de una aplicación donde se aprecia el carácter práctico del producto y su adaptación al entorno.',
+            'Imagen de solución fabricada para combinar presencia visual, durabilidad y uso constante.',
+            'Referencia de pieza versátil orientada a espacios públicos, privados o de servicio frecuente.',
+            'Detalle de producto con líneas funcionales y acabado pensado para instalación prolongada.',
+            'Muestra del catálogo Reforplaz donde se perciben utilidad, escala y respuesta comercial.',
+            'Referencia adicional de una solución resistente diseñada para proyectos recreativos o arquitectónicos.'
+        ],
+        descriptionsEn: [
+            'View of a Reforplaz solution created for recreational or urban spaces, with practical use and strong visual presence.',
+            'Product image built for daily use while maintaining a clean look and material strength.',
+            'Reference piece for architectural, public, or commercial projects where utility is essential.',
+            'Reforplaz portfolio detail summarizing its functional, durable, and adaptable profile.',
+            'Application view showing the product’s practical nature and adaptation to its setting.',
+            'Solution image combining visual presence, durability, and continuous use.',
+            'Versatile piece reference for public, private, or frequent-service spaces.',
+            'Product detail with functional lines and a finish designed for long-term installation.',
+            'Reforplaz catalog sample showing utility, scale, and commercial readiness.',
+            'Additional reference of a durable solution designed for recreational or architectural projects.'
+        ]
     }
 };
 
@@ -2459,8 +2569,8 @@ function createBrandGalleryMarkup(park, variant = 'full') {
         return '';
     }
 
-    const visibleImages = galleryImages.slice(0, 4);
-    const extraImages = Math.max(galleryImages.length - visibleImages.length, 0);
+    const visibleImages = galleryImages;
+    const extraImages = 0;
     const title = variant === 'full' ? 'Más fotos de la marca' : 'Galería';
 
     return `
@@ -2496,19 +2606,13 @@ function getUniqueGalleryImages(park) {
 }
 
 function getPreferredGalleryImages(park) {
+    const curatedGallery = COMPLETE_GALLERIES[park.id];
+    if (Array.isArray(curatedGallery) && curatedGallery.length) {
+        return curatedGallery.filter(Boolean);
+    }
+
     const galleryImages = getUniqueGalleryImages(park);
-    const featuredIndexes = GALLERY_FEATURED_SELECTIONS[park.id] || [];
-    const curatedImages = featuredIndexes
-        .map(index => galleryImages[index])
-        .filter(Boolean);
-
-    galleryImages.forEach((image) => {
-        if (!curatedImages.includes(image)) {
-            curatedImages.push(image);
-        }
-    });
-
-    return curatedImages;
+    return galleryImages.filter(image => image && image !== park.image);
 }
 
 function getLocalizedParkContent(park, currentLanguage) {
@@ -3326,6 +3430,11 @@ function getGalleryImageDescription(park, imageIndex, language = 'es') {
     const products = localized.products.length ? localized.products : localized.highlights;
     const leadProduct = products[imageIndex % products.length] || park.name;
     const context = GALLERY_DESCRIPTION_CONTEXT[park.id] || {};
+    const specificDescriptions = isEs ? context.descriptionsEs : context.descriptionsEn;
+
+    if (Array.isArray(specificDescriptions) && specificDescriptions[imageIndex]) {
+        return specificDescriptions[imageIndex];
+    }
 
     if (isEs) {
         const summary = context.summaryEs || 'una referencia visual del portafolio actual de la marca';
