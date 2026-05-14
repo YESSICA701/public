@@ -11598,6 +11598,32 @@ body.home-page {
         gap: 0.7rem;
     }
 
+    .companies-page-section .brand-gallery-panel {
+        padding: 0.7rem 0 0.15rem;
+    }
+
+    .companies-page-section .brand-gallery-title {
+        margin-bottom: 0.45rem;
+        font-size: 0.76rem;
+    }
+
+    .companies-page-section .brand-gallery-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+        margin: 0 0 0.7rem;
+    }
+
+    .companies-page-section .brand-gallery-thumb {
+        min-height: 92px;
+        border-radius: 14px;
+        box-shadow: 0 10px 22px rgba(8, 47, 73, 0.1);
+    }
+
+    .companies-page-section .brand-gallery-more {
+        padding: 0.45rem 0.55rem;
+        font-size: 0.8rem;
+    }
+
     .companies-page-section .featured-brand-name {
         font-size: 1rem;
     }
@@ -11677,6 +11703,15 @@ body.home-page {
     .companies-page-section .featured-brand-image-container {
         height: 190px;
         min-height: 190px;
+    }
+
+    .companies-page-section .brand-gallery-strip {
+        gap: 0.45rem;
+    }
+
+    .companies-page-section .brand-gallery-thumb {
+        min-height: 82px;
+        border-radius: 12px;
     }
 
     .companies-page-section .featured-brand-stats-grid {
