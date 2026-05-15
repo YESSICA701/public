@@ -553,26 +553,26 @@ const GALLERY_DESCRIPTION_CONTEXT = {
         summaryEs: 'una pieza desarrollada en fibra de vidrio para aplicaciones recreativas, decorativas o funcionales',
         summaryEn: 'a fiberglass piece developed for recreational, decorative, or functional uses',
         descriptionsEs: [
-            'Vista principal de una pieza recreativa en fibra de vidrio donde se aprecia el volumen general, el color aplicado y la limpieza del acabado.',
-            'Imagen de producto funcional con terminación uniforme, pensada para espacios comerciales o recreativos de uso constante.',
-            'Referencia visual de una solución fabricada para combinar resistencia estructural, presencia visual y mantenimiento práctico.',
-            'Detalle del portafolio Fiberglass donde se destaca la versatilidad de la marca en formas, acabados y aplicaciones decorativas o utilitarias.',
-            'Vista de una pieza fabricada con énfasis en durabilidad, terminación prolija y adaptación a distintos usos.',
-            'Imagen que muestra una solución de catálogo pensada para combinar utilidad diaria y buena presencia visual.',
-            'Referencia de producto en fibra de vidrio donde se aprecia el trabajo de forma, color y resistencia del material.',
-            'Detalle de una aplicación funcional con acabado limpio, orientada a espacios recreativos o comerciales.',
-            'Muestra adicional del portafolio de la marca, enfocada en variedad de diseño y consistencia de fabricación.'
+            'Hongos lluviosos: Estructuras coloridas que rocían agua constantemente.Balde automatizado: Un gran cubo en la parte superior que se llena y se vuelca por sorpresa.Toboganes infantiles: Rampas de baja altura y velocidad segura para los más pequeños.',
+            'La imagen muestra un colorido parque infantil de varios niveles, diseñado con una temática de personajes y animales. La estructura está situada al aire libre sobre un área de césped',
+            'Tobogán de rana: Una gran figura de rana verde con puntos amarillos cuya lengua roja sirve como tobogán hacia una piscina circular poco profunda.Hongo lluvioso: Una estructura roja con motas blancas (estilo amanita) que rocía agua como una cortina sobre los niños que juegan debajo.',
+            'Esta imagen muestra un baño portátil de color blanco ubicado en un espacio público, como un parque o una plaza.',
+            'Las piezas blancas que ves en primer plano son reposeras ergonómicas de diseño, muy populares en resorts y parques acuáticos de lujo.',
+            'Esta es una papelera o bote de basura temático diseñado para espacios infantiles o parques.',
+            'Esta es una figura decorativa de una morsa, ubicada en el sector infantil de un parque acuático de Fibra de vidrio reforzada: Es el material estándar para estas esculturas por su alta durabilidad.',
+            'Esta es una figura temática de un elefante, diseñada para funcionar como un elemento decorativo e interactivo en un parque acuático.',
+            'Esta es una cabina de ducha portátil, diseñada para ser instalada rápidamente en campamentos, obras o eventos al aire libre.'
         ],
         descriptionsEn: [
-            'Main view of a recreational fiberglass piece showing overall volume, applied color, and finish quality.',
-            'Product image with a uniform finish, created for commercial or recreational spaces with continuous use.',
-            'Visual reference of a solution that combines structural strength, visual presence, and practical maintenance.',
-            'Fiberglass portfolio detail highlighting the brand’s versatility in shapes, finishes, and decorative or functional applications.',
-            'View of a piece made with emphasis on durability, clean finishing, and adaptability to different uses.',
-            'Catalog solution designed to combine everyday utility and strong visual presence.',
-            'Product reference showing shape work, color treatment, and material strength.',
-            'Functional application detail with a clean finish for recreational or commercial spaces.',
-            'Additional portfolio sample focused on design variety and manufacturing consistency.'
+            'Rain mushrooms: colorful structures that constantly spray water. Automated bucket: a large bucket at the top that fills up and tips over by surprise. Children\'s slides: low-height ramps with safe speed for younger children.',
+            'The image shows a colorful multi-level playground designed with a character and animal theme. The structure is located outdoors on a grassy area.',
+            'Frog slide: a large green frog figure with yellow spots whose red tongue serves as a slide into a shallow circular pool. Rain mushroom: a red structure with white spots, amanita-style, that sprays water like a curtain over the children playing underneath.',
+            'This image shows a white portable restroom located in a public space, such as a park or square.',
+            'The white pieces seen in the foreground are ergonomic designer lounge chairs, very popular in luxury resorts and water parks.',
+            'This is a themed waste bin or trash can designed for children\'s spaces or parks.',
+            'This is a decorative walrus figure located in the children\'s area of a fiberglass water park. Reinforced fiberglass is the standard material for these sculptures because of its high durability.',
+            'This is an elephant-themed figure designed to work as a decorative and interactive element in a water park.',
+            'This is a portable shower cabin designed for quick installation at campsites, construction sites, or outdoor events.'
         ]
     },
     2: {
@@ -580,23 +580,23 @@ const GALLERY_DESCRIPTION_CONTEXT = {
         summaryEn: 'an aquatic or monumental work designed to stand out through scale, form, and visual presence',
         descriptionsEs: [
             'Vista general de una obra Montenegro donde se percibe la escala del proyecto, su composición visual y el carácter monumental del diseño.',
-            'Imagen de estructura recreativa con énfasis en el recorrido del usuario, la integración de formas y el impacto estético del conjunto.',
-            'Detalle de proyecto acuático donde se aprecian acabados, color y una propuesta visual pensada para destacar dentro del espacio.',
-            'Referencia del portafolio monumental de la marca, enfocada en presencia escénica, diseño artístico y experiencia visual.',
-            'Vista de una obra donde se aprecia la mezcla entre construcción, escala y lenguaje decorativo aplicado al proyecto.',
-            'Imagen de instalación recreativa con protagonismo de forma, color y composición arquitectónica.',
-            'Detalle visual de una propuesta pensada para generar impacto dentro de un espacio familiar o público.',
-            'Muestra adicional del portafolio Montenegro, centrada en presencia visual, recorrido y volumen de la obra.'
+            'Esta imagen muestra un complejo de juegos acuáticos tipo "Splash Pad", diseñado para parques recreativos o piscinas públicas.',
+            'Esta imagen muestra una piscina de diseño minimalista con un estilo moderno y sofisticado, ideal para patios contemporáneos.',
+            'Esta imagen muestra la Bike Aérea, una atracción de aventura extrema La bicicleta se desplaza sobre cables de acero de alta resistencia que soportan varias toneladas de peso.',
+            'Hongos lluviosos: Estructuras coloridas que rocían agua constantemente.Balde automatizado: Un gran cubo en la parte superior que se llena y se vuelca por sorpresa.Toboganes infantiles: Rampas de baja altura y velocidad segura para los más pequeños.',
+            'El puente colgante y las pasarelas están fabricados con madera de alta resistencia (como eucalipto o maderas tropicales) tratada para soportar la humedad constante y el sol.',
+            'Parque acuatico de Fibra de vidrio (PRFV): Es el material de todos los toboganes. Se usa por su acabado liso que permite el deslizamiento y su alta resistencia a la intemperie.',
+            'Esta es una piscina de diseño moderno con un muro cubierto de vegetación iluminado con focos LED'
         ],
         descriptionsEn: [
             'General view of a Montenegro project highlighting scale, visual composition, and monumental design character.',
-            'Recreational structure focused on user flow, integrated forms, and the aesthetic impact of the whole installation.',
-            'Aquatic project detail showing finishes, color, and a visual proposal designed to stand out within the space.',
-            'Monumental portfolio reference centered on scenic presence, artistic design, and visual experience.',
-            'View of a project combining construction, scale, and decorative language.',
-            'Recreational installation image focused on shape, color, and architectural composition.',
-            'Visual detail of a proposal designed to create impact in a family or public setting.',
-            'Additional Montenegro portfolio sample centered on visual presence, flow, and spatial volume.'
+            'This image shows a colorful splash pad aquatic play complex designed for recreational parks or public pools.',
+            'This image shows a minimalist pool with a modern and sophisticated style, ideal for contemporary patios.',
+            'This image shows the Aerial Bike, an extreme adventure attraction. The bicycle moves along high-strength steel cables that support several tons of weight.',
+            'Rain mushrooms: colorful structures that constantly spray water. Automated bucket: a large bucket at the top that fills up and tips over by surprise. Children\'s slides: low-height ramps with safe speed for younger children.',
+            'The suspension bridge and walkways are made from high-strength wood, such as eucalyptus or tropical woods, treated to withstand constant humidity and sun exposure.',
+            'Fiberglass water park (FRP): this is the material used for all the slides. It is used because its smooth finish allows sliding and because it has high weather resistance.',
+            'This is a modern pool with a wall covered in vegetation and illuminated with LED spotlights.'
         ]
     },
     3: {
@@ -604,51 +604,51 @@ const GALLERY_DESCRIPTION_CONTEXT = {
         summaryEn: 'a recreational proposal focused on pools, slides, and family aquatic experiences',
         descriptionsEs: [
             'Diseño corporativo con temática tropical y acuática que combina colores vibrantes en tonos verde, amarillo y azul. ',
-            'Imagen de toboganes y entorno acuático que comunica diversión, color y perfil comercial del proyecto.',
-            'Escena centrada en la experiencia familiar, con elementos diseñados para atraer distintas edades en un mismo espacio.',
-            'Referencia visual del portafolio AquaPark con énfasis en impacto recreativo, ambientación vacacional y recordación de marca.',
-            'Vista de instalación acuática donde se aprecia el vínculo entre entretenimiento, escala y uso familiar.',
-            'Imagen de proyecto recreativo orientado a generar experiencia visual y permanencia del visitante.',
-            'Detalle de espacio acuático con protagonismo de juego, color y composición general del entorno.',
-            'Muestra comercial del portafolio AquaPark pensada para destacar diversión, movimiento y atractivo visual.',
-            'Referencia adicional de una propuesta familiar donde piscina y estructura trabajan como un solo conjunto.'
+            'Parque acuático familiar con toboganes coloridos, piscinas y áreas recreativas ideales para divertirse y refrescarse.',
+            'Piscina recreativa con modernos toboganes acuáticos de colores, perfecta para disfrutar momentos divertidos en familia.',
+            'Impresionante parque acuático con grandes toboganes en espiral de colores amarillo, verde y azul, rodeado de una amplia piscina cristalina y una espectacular vista',
+            'Toboganes fabricados con fibra de vidrio y plástico reforzado de alta resistencia, con estructura metálica segura y duradera, ideales para ambientes acuáticos y recreativos.',
+            'Imponente tobogán acuático en espiral con estructura elevada y diseño extremo, acompañado de una increíble entrada temática en forma de dragón gigante que brinda una experiencia llena de adrenalina, diversión y aventura para todas las edades. Ideal para quienes buscan emociones únicas en el parque acuático.',
+            'Fabricado con materiales resistentes al agua, al sol y al uso constante, este juego acuático garantiza seguridad, estabilidad y larga vida útil. Perfecto para parques recreativos, clubes, hoteles y complejos turísticos que buscan ofrecer entretenimiento de calidad con un diseño llamativo y moderno.',
+            'Fabricado con materiales resistentes al agua, a la exposición solar y al uso continuo, este equipamiento garantiza durabilidad, seguridad y excelente acabado visual. Ideal para parques acuáticos, complejos turísticos, clubes recreativos y proyectos vacacionales que buscan destacar con atracciones.',
+            'Este moderno conjunto de toboganes combina estructuras de alto impacto visual con materiales resistentes y seguros, ideales para parques acuáticos, clubes recreativos y centros turísticos. Su diseño incluye descensos rectos y curvas dinámicas que ofrecen experiencias emocionantes para todos'
         ],
         descriptionsEn: [
-            'View of a family aquatic proposal showing balance between pool, play elements, and recreational circulation.',
-            'Image of slides and aquatic surroundings that communicates fun, color, and the project’s commercial profile.',
-            'Scene centered on family experience, with elements designed to attract different age groups in one space.',
-            'AquaPark visual reference focused on recreational impact, vacation atmosphere, and brand recall.',
-            'Aquatic installation view showing the relationship between entertainment, scale, and family use.',
-            'Recreational project image designed to create visual experience and visitor engagement.',
-            'Aquatic space detail centered on play elements, color, and overall composition.',
-            'Commercial AquaPark sample built to highlight fun, movement, and visual appeal.',
-            'Additional family proposal reference where pool and structure work as one integrated whole.'
+            'Corporate design with a tropical and aquatic theme that combines vibrant shades of green, yellow, and blue.',
+            'Family water park with colorful slides, pools, and recreational areas ideal for having fun and cooling off.',
+            'Recreational pool with modern colorful water slides, perfect for enjoying fun family moments.',
+            'Impressive water park with large spiral slides in yellow, green, and blue, surrounded by a wide crystal-clear pool and a spectacular view.',
+            'Slides made from high-strength fiberglass and reinforced plastic, with a safe and durable metal structure, ideal for aquatic and recreational environments.',
+            'Imposing spiral water slide with an elevated structure and extreme design, accompanied by an incredible giant dragon-themed entrance that provides an experience full of adrenaline, fun, and adventure for all ages. Ideal for those seeking unique thrills at the water park.',
+            'Made with materials resistant to water, sun, and constant use, this aquatic play structure guarantees safety, stability, and long service life. Perfect for recreational parks, clubs, hotels, and tourist complexes that want to offer quality entertainment with a striking and modern design.',
+            'Made with materials resistant to water, sun exposure, and continuous use, this equipment guarantees durability, safety, and an excellent visual finish. Ideal for water parks, tourist complexes, recreational clubs, and vacation projects that want to stand out with attractions.',
+            'This modern slide set combines high-impact visual structures with resistant and safe materials, ideal for water parks, recreational clubs, and tourist centers. Its design includes straight descents and dynamic curves that offer exciting experiences for everyone.'
         ]
     },
     4: {
         summaryEs: 'una solución en fibra de vidrio pensada para uso comercial, recreativo o decorativo',
         summaryEn: 'a fiberglass solution created for commercial, recreational, or decorative use',
         descriptionsEs: [
-            'Vista de una pieza Fibrotek donde se aprecia una aplicación práctica con acabado visual limpio y presencia comercial.',
-            'Referencia de solución en fibra de vidrio que destaca por su forma, utilidad y resistencia para uso constante.',
-            'Imagen de producto pensado para combinar creatividad, fabricación funcional y adaptación a distintos entornos.',
-            'Detalle del portafolio Fibrotek donde se percibe la versatilidad de la marca en soluciones decorativas o comerciales.',
-            'Vista de una pieza fabricada para responder a necesidades visibles, funcionales y de larga duración.',
-            'Imagen de solución comercial donde se aprecia proporción, acabado y facilidad de integración en el espacio.',
-            'Referencia de producto adaptable a contextos recreativos, urbanos o de servicio continuo.',
-            'Muestra visual del catálogo Fibrotek con énfasis en utilidad, resistencia y propuesta formal.',
-            'Detalle adicional que refuerza la variedad de fabricación de la marca en piezas especiales y de uso diario.'
+            'Este es un carrito de helados portátil, utilizado por vendedores ambulantes para mantener y transportar productos congelados.',
+            'Esta es una estructura de juegos infantiles modular diseñada para interiores o áreas techadas, con un estilo moderno y deportivo.',
+            'Esta estructura de juegos infantiles está fabricada con materiales industriales diseñados para el uso rudo y la exposición al aire libre',
+            'Esta estructura es un equipo multideportivo combinado, diseñado para integrar una portería de fútbol sala (o balonmano) con un tablero de baloncesto en una sola pieza.',
+            'Esta imagen muestra un sube y baja (o balancín) cuádruple, diseñado para que hasta cuatro niños jueguen al mismo tiempo.',
+            'Este juego de plaza es un carrusel de cono giratorio (o pirámide giratoria), diseñado para que los niños giren mientras se sujetan de su estructura metálica.',
+            'Este es un balancín de muelle (o resorte) doble, diseñado con la temática de un avestruz o ñandú para parques infantiles.',
+            'Este es un parque infantil modular de gran tamaño, diseñado para ofrecer múltiples actividades en una sola estructura.',
+            'Esta imagen muestra el tobogán recto de una estructura de juegos infantiles instalada en un espacio interior techado.'
         ],
         descriptionsEn: [
-            'View of a Fibrotek piece showing a practical application with a clean finish and commercial presence.',
-            'Fiberglass solution reference highlighting form, usability, and strength for continuous use.',
-            'Product image created to combine creativity, functional manufacturing, and adaptability to different settings.',
-            'Fibrotek portfolio detail showing the brand’s versatility in decorative or commercial solutions.',
-            'View of a piece made for visible, functional, and long-lasting use.',
-            'Commercial solution image showing proportion, finish, and easy integration within a space.',
-            'Product reference adaptable to recreational, urban, or continuous-service contexts.',
-            'Catalog sample focused on utility, resistance, and formal design.',
-            'Additional detail reinforcing the brand’s range in special and everyday-use pieces.'
+            'This is a portable ice cream cart used by street vendors to keep and transport frozen products.',
+            'This is a modular children\'s play structure designed for indoor or covered areas, with a modern and sporty style.',
+            'This children\'s play structure is made with industrial materials designed for heavy use and outdoor exposure.',
+            'This structure is a combined multi-sport unit designed to integrate an indoor soccer or handball goal with a basketball backboard in a single piece.',
+            'This image shows a quadruple seesaw designed so up to four children can play at the same time.',
+            'This playground equipment is a spinning cone carousel, or spinning pyramid, designed so children can rotate while holding onto its metal structure.',
+            'This is a double spring rocker designed with an ostrich or rhea theme for children\'s playgrounds.',
+            'This is a large modular playground designed to offer multiple activities in a single structure.',
+            'This image shows the straight slide of a children\'s play structure installed in a covered indoor space.'
         ]
     },
     5: {
@@ -656,27 +656,27 @@ const GALLERY_DESCRIPTION_CONTEXT = {
         summaryEn: 'a project made in fiberglass or reconstituted marble for recreational or architectural spaces',
         descriptionsEs: [
             'Vista de una solución Reforplaz orientada a espacios recreativos o urbanos, con enfoque práctico y buena presencia visual.',
-            'Imagen de producto fabricado para responder a uso diario sin perder limpieza formal ni resistencia del material.',
-            'Referencia de pieza pensada para proyectos arquitectónicos, públicos o comerciales donde la utilidad es clave.',
-            'Detalle del portafolio Reforplaz que resume su perfil funcional, resistente y adaptable a distintos escenarios.',
-            'Vista de una aplicación donde se aprecia el carácter práctico del producto y su adaptación al entorno.',
+            'Esta imagen muestra un área de juegos infantiles vibrante Estructuras de juego: Incluye toboganes, escaleras y áreas de escalada modulares con techos de colores.',
+            'Esta imagen muestra un ajedrez gigante Es un atractivo interactivo donde los visitantes pueden jugar partidas a escala real sobre una estructura metálica elevada.',
+            'Esta imagen muestra un carrusel giratorio infantil en un patio de juegos, diseñado con una estructura metálica roja y asientos de plástico azul. Este tipo de juegos son clásicos en áreas recreativas escolares o parques infantiles.',
+            'Esta imagen muestra un banco infantil con diseño de dinosaurio, una pieza de mobiliario urbano creativa y colorida.',
             'Imagen de solución fabricada para combinar presencia visual, durabilidad y uso constante.',
-            'Referencia de pieza versátil orientada a espacios públicos, privados o de servicio frecuente.',
-            'Detalle de producto con líneas funcionales y acabado pensado para instalación prolongada.',
-            'Muestra del catálogo Reforplaz donde se perciben utilidad, escala y respuesta comercial.',
-            'Referencia adicional de una solución resistente diseñada para proyectos recreativos o arquitectónicos.'
+            'Esta imagen muestra una máquina de ejercicios para gimnasios al aire libre, específicamente un equipo de esquí de fondo o caminador doble.',
+            'Esta imagen muestra una máquina de torsión de cintura (triple) para gimnasios al aire libre, instalada en un parque infantil. ',
+            'Esta imagen muestra un túnel infantil con diseño de oruga, un elemento clásico y divertido para parques de juegos.',
+            'Esta imagen muestra una piscina con estatuas de delfines. res figuras azules que parecen saltar sobre el agua, sostenidas por soportes metálicos visibles.'
         ],
         descriptionsEn: [
             'View of a Reforplaz solution created for recreational or urban spaces, with practical use and strong visual presence.',
-            'Product image built for daily use while maintaining a clean look and material strength.',
-            'Reference piece for architectural, public, or commercial projects where utility is essential.',
-            'Reforplaz portfolio detail summarizing its functional, durable, and adaptable profile.',
-            'Application view showing the product’s practical nature and adaptation to its setting.',
+            'This image shows a vibrant children\'s play area. Play structures: it includes slides, stairs, and modular climbing areas with colorful roofs.',
+            'This image shows a giant chess set. It is an interactive attraction where visitors can play life-size games on an elevated metal structure.',
+            'This image shows a children\'s spinning carousel in a playground, designed with a red metal structure and blue plastic seats. This type of equipment is classic in school recreational areas or children\'s parks.',
+            'This image shows a children\'s bench with a dinosaur design, a creative and colorful piece of urban furniture.',
             'Solution image combining visual presence, durability, and continuous use.',
-            'Versatile piece reference for public, private, or frequent-service spaces.',
-            'Product detail with functional lines and a finish designed for long-term installation.',
-            'Reforplaz catalog sample showing utility, scale, and commercial readiness.',
-            'Additional reference of a durable solution designed for recreational or architectural projects.'
+            'This image shows an outdoor gym exercise machine, specifically a cross-country ski trainer or double walker.',
+            'This image shows a triple waist-twisting machine for outdoor gyms, installed in a children\'s park.',
+            'This image shows a children\'s tunnel with a caterpillar design, a classic and fun element for playgrounds.',
+            'This image shows a pool with dolphin statues. Three blue figures appear to be jumping over the water, supported by visible metal brackets.'
         ]
     }
 };
