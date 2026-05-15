@@ -2035,13 +2035,13 @@ function getProjectsMegaConfig(currentLanguage) {
             brandTitle: isEs ? 'Marcas' : 'Brands',
             visuals: [
                 {
-                    image: '../img/fiberglass/fiberglass14.jpg',
+                    image: '../img/fiberglass/fiberglass1.jpeg',
                     position: 'center center',
                     label: isEs ? 'Explorar todas las empresas' : 'Explore all companies',
                     href: parksSectionHref
                 },
                 {
-                    image: '../img/montenegro/montenegro24.jpg',
+                    image: '../img/montenegro/montenegro1.jpeg',
                     position: 'center center',
                     label: isEs ? 'Ir a contacto comercial' : 'Go to commercial contact',
                     href: contactPath
@@ -2075,8 +2075,8 @@ function getProjectsMegaConfig(currentLanguage) {
             ],
             brandTitle: isEs ? 'Marcas' : 'Brands',
             visuals: [
-                { image: '../img/aquapark/aquapark24.jpeg', position: 'center center', label: isEs ? 'Ver linea acuapark' : 'See Aquapark line', href: buildBrandDetailsUrl(aquapark.id) },
-                { image: '../img/reforplaz/reforplaz23.jpeg', position: 'center top', label: isEs ? 'Abrir marca reforplaz' : 'Open Reforplaz brand', href: buildBrandDetailsUrl(reforplaz.id) }
+                { image: '../img/aquapark/aquapark1.jpg', position: 'center center', label: isEs ? 'Ver linea acuapark' : 'See Aquapark line', href: buildBrandDetailsUrl(aquapark.id) },
+                { image: '../img/reforplaz/reforplaz1.png', position: 'center top', label: isEs ? 'Abrir marca reforplaz' : 'Open Reforplaz brand', href: buildBrandDetailsUrl(reforplaz.id) }
             ]
         },
         marcas: {
@@ -2106,8 +2106,8 @@ function getProjectsMegaConfig(currentLanguage) {
             ],
             brandTitle: isEs ? 'Abrir marca' : 'Open brand',
             visuals: [
-                { image: '../img/fibrotek/fibrotek18.jpeg', position: 'center center', label: isEs ? 'Abrir marcas recomendadas' : 'Open recommended brands', href: buildBrandDetailsUrl(fibrotek.id) },
-                { image: '../img/montenegro/montenegro25.jpeg', position: 'center center', label: isEs ? 'Comparar empresas' : 'Compare companies', href: parksSectionHref }
+                { image: '../img/fibrotek/fibrotek3.jpeg', position: 'center center', label: isEs ? 'Abrir marcas recomendadas' : 'Open recommended brands', href: buildBrandDetailsUrl(fibrotek.id) },
+                { image: '../img/montenegro/montenegro5.png', position: 'center center', label: isEs ? 'Comparar empresas' : 'Compare companies', href: parksSectionHref }
             ]
         },
         soluciones: {
@@ -2138,7 +2138,7 @@ function getProjectsMegaConfig(currentLanguage) {
             brandTitle: isEs ? 'Marcas' : 'Brands',
             visuals: [
                 { image: '../img/fiberglass/fiberglass6.jpeg', position: 'center center', label: isEs ? 'Soluciones por proyecto' : 'Solutions by project', href: parksSectionHref },
-                { image: '../img/aquapark/aquapark25.JPG', position: 'center center', label: isEs ? 'Explorar mas opciones' : 'Explore more options', href: parksSectionHref }
+                { image: '../img/aquapark/aquapark4.png', position: 'center center', label: isEs ? 'Explorar mas opciones' : 'Explore more options', href: parksSectionHref }
             ]
         }
     };
